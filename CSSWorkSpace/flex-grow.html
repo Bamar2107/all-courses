@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Grow</title>
+    <style>
+        body{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        h1{
+            color: blueviolet;
+            font-weight: 600;
+            text-align: center;
+        }
+        .container{
+            margin: 45px auto 0;
+            border: 2px solid black;
+            width: 450px;
+
+            display: flex;
+        }
+        .items{
+            color: #fff;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            padding: 10px;
+            margin: 0px;
+            flex-grow: 0;
+            
+        }
+        .item1{background: rgb(14, 155, 56);}
+        .item2{background: lightgreen;}
+        .item3{background: lightslategrey;}
+        .item4{background: lightcoral;flex-grow: 2;}
+        .item5{background: rgb(10, 77, 77);}
+        .item6{background: royalblue;flex-grow: 5;}
+
+    </style>
+</head>
+<body>
+    <h1>Flex grow Properties in CSS</h1>
+    <p>flex grow is about individual flex item width property. It depends on the parent flex grow value.</p>
+    <div class="container"><div class="items item1">One</div>
+    <div class="items item2">Two</div>
+    <div class="items item3">Three</div>
+    <div class="items item4">Four</div>
+    <div class="items item5">Five</div>
+    <div class="items item6">Six</div></div>
+</body>
+</html>

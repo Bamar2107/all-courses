@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box-Shadow</title>
+    <style>
+        #box{
+            height: 200px;
+            width:200px;
+            border: 3px solid black;
+            box-shadow: 4px 4px 5px blue, 8px 8px 6px red, 12px 12px 7px green;
+            margin: 50px 0px 0px 50px;
+           
+            /* box-shadow first two properties is for x & y that means for horizontal & vertical
+            next property is for blur(by default blur is 0)
+            next is for spread i.e blur spread property 
+            and last one is for shadow color property 
+            
+            we can use multiple shadow just separated by comma. Only one thing to remember that previously x & y values must be smaller than the 
+            next one 
+            
+            we can use shadow inside of the div element, we just have to add insert property after colour property value*/
+
+        }
+    </style>
+</head>
+<body>
+    <div id="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga oditm ipsum dolor sit amet consectetur adipisicing elit. Fuga oditm ipsum dolor sit amet consectetur adipisicing elit. Fuga odit, incidunt iste cum corrupti hic temporibus vel reprehenderit iusto? Illum.</div>
+</body>
+</html>

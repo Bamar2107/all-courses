@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aspect ratio part 2</title>
+    <style>
+        .parent{
+            width:700px;
+            border: 2px solid black;
+        }
+        iframe{
+            width: 100%;
+            height: auto;
+            aspect-ratio: 16/9;
+        }
+        @media screen and (max-width:500px) {
+            .parent{
+                width: 100%;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Aspect ratio part 2</h1>
+    <div class="parent">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/VDwka__-ScA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    
+</body>
+</html>

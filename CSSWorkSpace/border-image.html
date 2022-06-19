@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border Image</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .box1{
+            width: 300px;
+            height: 300px;
+            background: mediumslateblue;
+            border: 30px solid black;
+            text-align: justify;
+            padding: 8px;
+            border-image-source: url(border4.gif);
+            border-image-slice: 50; /*slice will cut the image according to the given value, this value can be in pixels*/
+            border-image-width: 15px; 
+            border-image-repeat: round stretch;  /*stretch , repeat are the other values 
+            /* we can use two different values like round repeat , first represent x-axis & second represent y-axis
+            we can use color as border images */ 
+            border-image-outset: 2px;
+           
+            /* border-image: linear-gradiant(to right red,yellow 15/10px); */
+        }
+    </style>
+</head>
+<body>
+    <h1>Border Image Properties</h1>
+    <div class="box1">  tempora neque nisi voluptatum? Placeat possimus, cumque rem dolore expedita ad quaerat culpa esse aliquid, illum tempore fuga aliquam illo laboriosam commodi optio? Esse maiores nisi saepe fuga facere, doloremque repellat, a dolorem vel beatae voluptates? Repellat tenetur voluptatem vel quam iste numquam in sed aut quos! Pariatur, officiis quos modi fugit dicta praesentium animi ea. Pariatur asperiores maxime, commodi sit accusamus ipsa ratione, assumenda rerum optio, voluptas aspernatur quasi fugit quo unde qui.</div>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perspective in CSS</title>
+   <style>
+       body div{
+        display: inline-block;
+       }
+       #base{
+           width: 350px;
+           height: 250px;
+           background-color: gray;
+           font-size: 10px;
+           text-align: center;
+           margin: 100px 0 0 100px;
+           perspective: 600px;
+           perspective-origin: 20% 50%;
+
+       }
+       #base1{
+           width: 350px;
+           height: 250px;
+           background-color: gray;
+           font-size: 10px;
+           text-align: center;
+           margin: 100px 0 0 100px;
+           perspective: 600px;
+           
+
+       }
+       #child{
+        width: 350px;
+           height: 250px;
+           background-color: tomato;
+           transform: rotateX(60deg);
+           font-size: 20px;
+           color: white;
+       }
+       #child1{
+        width: 350px;
+           height: 250px;
+           background-color: tomato;
+           transform: rotateY(60deg);
+           font-size: 20px;
+           color: white;
+       }
+   </style>
+</head>
+<body>
+    <h1>Perspective in CSS</h1>
+    <div id="base">
+        <div id="child">Perspective rotate X</div>
+    </div>
+
+    <div id="base1">
+        <div id="child1">Perspective rotate Y</div>
+    </div>
+</body>
+</html>

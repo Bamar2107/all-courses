@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DisplayTable</title>
+    <style>
+        
+        body{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 20px;
+        }
+        h1{
+            text-align: center;
+        }
+        #table{
+            display: table;
+            border: 2px solid black;
+            width: 500px;
+            margin: 0 auto;
+        }
+        .row{
+            display: table-row;
+        }
+        .col{
+            display: table-cell;
+            border: 2px solid black;
+            padding: 10px;
+        }
+        #table-header{
+            display:table-header-group;
+            background-color: lightblue;
+            font-weight: bold;
+            text-align: center;
+        }
+        #table-footer{
+            display:table-footer-group;
+            background-color: lightgreen;
+            font-weight: bold;
+            text-align: center;
+        }
+        #table-row-group{
+            display: table-row-group;
+        }
+        #table-col-group{
+            display: table-column-group;
+        }
+        .col-group{
+            display: table-column;
+        }
+        .col2{
+            background-color: pink;
+        }
+        #caption{
+            display: table-caption;
+            color: blue;
+            text-align: center;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Display Table properties in CSS</h1>
+    <div id="table">
+        <div id="caption">
+            <h3>STUDENT INFORMATION</h3>
+        </div>
+        <div id="table-col-group">
+            <div class="col-group col1"></div>
+            <div class="col-group col2"></div>
+            <div class="col-group col3"></div>
+        </div>
+        <div id="table-header">
+            <div class="col">Roll No</div>
+            <div class="col">Name</div>
+            <div class="col">Age</div>
+        </div>
+         <div id="table-row-group">
+            <div class="row">
+                <div class="col">1</div>
+                <div class="col">Amar</div>
+                <div class="col">26</div>
+            </div>
+            <div class="row">
+                <div class="col" style="vertical-align: middle;">2</div>
+                <div class="col">Neel Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut magni iste esse, tempora facilis possimus placeat iure itaque minima odit recusandae eligendi minus nostrum, sapiente nihil eius, non ipsam id?</div>
+                <div class="col">27</div>
+            </div>
+            <div class="row">
+                <div class="col">3</div>
+                <div class="col">Ashish</div>
+                <div class="col">26</div>
+            </div>
+         </div>
+        <div id="table-footer">
+            <div class="col"></div>
+            <div class="col">Total Record :</div>
+            <div class="col">3</div>
+        </div>
+    </div>
+</body>
+</html>

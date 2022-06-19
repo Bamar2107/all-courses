@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>White Space</title>
+    <style>
+        #box{
+            border: 1px solid black;
+            width: 50%;
+            padding: 5px;
+            white-space:pre-line;
+
+            
+            /* by default white spcae value is normal that means if you change your conyent it will not refelct anything on browser 
+            then nowrap value did not wrap anything & put all your content in a single line & it will overflow from your element
+            pre value did line break if you have done line change in your content but doesnot support wrap & behave likes nowrap and content will overflow
+            pre-line supports only line break but doesnot show white spaces meansa after line break all of your content shows as normal
+            pre-wrap shows white spaces as well as line break of your content 
+            
+            
+            Note
+            Content will overflow in nowrap & pre
+            Content will not overflow in pre-line,pre-wrap & normal i.e default value
+            */
+        }
+    </style>
+</head>
+<body>
+    <h2>White Space Prperties in CSS</h2>
+       <div id="box">Lorem ipsum dolor sit amet consectetur                            
+                                   adipisicing elit. Corrupti, dicta 
+        veritatis! Minima distinctio
+         aliquam voluptates autem                                                      soluta ipsam minus, 
+         expedita accusantium earum magni deserunt iusto sed. Velit ab iure in voluptatum at! Cupiditate fuga quasi error voluptate atque debitis ipsam non necessitatibus animi, tempora quam consequuntur. Nemo quaerat, aut ratione vero autem dolore minus eveniet quos deleniti ex odio magnam praesentium vitae tempora aliquid nesciunt. Dignissimos, unde ipsam officiis eveniet asperiores ipsa exercitationem minima optio dolor consequatur aspernatur maiores. Doloribus possimus atque necessitatibus nobis, qui blanditiis iste recusandae accusamus perspiciatis expedita dignissimos accusantium corporis voluptas nesciunt nihil velit eius adipisci?</div>
+</body>
+</html>

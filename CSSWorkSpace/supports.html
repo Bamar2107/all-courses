@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@supports properties</title>
+    <style>
+        @supports (display: grid) or not(display:inline-grid){
+         body{
+             background-color: orange;
+         }
+        }
+    </style>
+</head>
+<body>
+   <h1>@supports checks if the browser supports the properties or not</h1> 
+   <h3>we can set multiple supports condition on any properties of CSS</h3>
+   <h3>Example</h3>
+   <h3>@supports (display:grid) or (text-underline-offset:3px){ body{background-color:cyan;}}</h3>
+   <h3>@supports (display:grid) and (text-underline-offset:3px){ body{background-color:cyan;}}</h3>
+<p>or represents if one of the condition is true then run the css properties</p>
+<p>and represents both of the condition should match</p>
+</body>
+</html>

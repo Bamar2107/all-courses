@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aspect ratio</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .test{
+            width: 200px;
+            background-color: pink;
+            border: 2px solid black;
+            aspect-ratio: 2/2;    /*if both value are same then we can give only one value to it*/
+        }
+    </style>
+</head>
+<body>
+    <h1>Aspect ratio in CSS</h1>
+    <div class="test">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, earum quidem! Illo saepe veritatis mollitia modi sequi, quod a dicta!</div>
+   <p>aspect ratio used for responsive design because if we give any of the value like here we gave width property for the div.
+       if content inside the div will become more then automatically div height will be adjust according to the content.
+   </p>
+    <p>aspect ratio first value is for width & second value is for height</p>
+   <p>we can set any one of the value, but if we give both the value i.e heigh & width in that case aspect ration will not work</p>
+   <p>if we don't give height & width property and just give aspect ratio in that case height will became auto because default 
+       value of width is auto i.e width of the browser. So height will become width of the browser.
+   </p>
+</body>
+</html>

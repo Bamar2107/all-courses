@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focus Within</title>
+    <style>
+        .main-container{
+            border: 2px solid black;
+            width: 400px;
+            display: flex;
+            justify-content: start;
+            background-color: lightpink;
+        }
+        .main-container:focus-within{
+            background-color: chartreuse;
+        }
+        form{
+            margin: 0;
+            padding: 0;
+        }
+        form h1{
+            padding: 2rem;
+            font-size: 28px;
+        }
+        form > div{
+            clear: both;
+            overflow: hidden;
+            padding: 0.5rem 2rem;
+        }
+        form >div:focus-within{
+            background-color: grayc;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+       
+        <form action="">
+            <h1>Focus-within Properties</h1>
+            <div><label for="">Name :</label>
+            <input type="text"></div>
+            <div><label for="">City :</label>
+                <input type="text"></div>
+            <div>
+                <legend>Gender :</legend>  <input type="radio" name="gender" id="male" value="male"><label for="male">Male</label> 
+                <input type="radio" value="female" name="gender" id="female"><label for="female">Female</label>
+            </div>
+            <div>
+                <legend>Hobbies: </legend> 
+                <input type="checkbox">Writing
+                <input type="checkbox">Reading
+                <input type="checkbox">Painting
+                <input type="checkbox">Playing Guitar
+
+            </div>
+            <div>
+                <legend>Country:</legend>
+                <select name="Country" id="">
+                    <option value="india">India</option>
+                    <option value="Austrlia">Australia</option>
+                    <option value="Srilanka">Srilanka</option>
+                    <option value="Russia">Russia</option>
+                    <option value="Nepal">Nepal</option>
+                </select>
+            </div>
+
+            <div>
+                <input type="submit" value="submit">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

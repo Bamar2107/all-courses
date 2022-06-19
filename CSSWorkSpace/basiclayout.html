@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Layout of WebPage</title>
+    <!-- <script src="https://kit.fontawesome.com/3f9af9772a.js" crossorigin="anonymous"></script> -->
+    <!-- This upper line is from fontawsome website -->
+    <link rel="stylesheet" href="css/all.css">       <!--this is from local system after download -->
+    <style>
+        :root{
+            --indication-color: linear-gradient(to right,crimson,yellow);
+            --menuSidebar-color: linear-gradient(to right, cornflowerblue,crimson);
+            --menubg-color: linear-gradient(to right, green,yellow,cyan);
+            --heading-font: Times New Roman; 
+            --p-font:Arial;
+        
+        }  /*The use of var()* function is described aboved in the code & use of that var function is below*/
+
+        body{
+            background-color: slategray;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+
+        }
+        .main-div{
+            border: 2px solid black;
+            width: 1500px;
+            background-color: whitesmoke;
+            margin: 0 auto;
+        }
+        #content h2:hover{
+                color: #fff;
+        }
+        #header{
+            background: var(--indication-color);
+            height: 100px;
+            color: white;
+        }
+        #header h1{
+            padding: 30px 0 0 20px;
+            font-family: var(--heading-font);
+        }
+        #header h1:hover{
+            color: lightblue;
+        }
+        
+        #menu{
+            background:var(--menubg-color);
+        
+        }
+        #menu ul{
+            margin: 0;
+            padding: 0;
+        }
+        #menu li{
+            display: inline-block;
+        }
+        #menu li a{
+            display: block;
+            padding: 10px 13px;
+            text-decoration: none;
+            color: black;
+        }
+        #menu li a:hover{
+            background-color: crimson;
+            color: white;
+        }
+        #content{
+            width: 800px;
+            float: left;
+            padding: 10px;
+            box-sizing: border-box; /* applicable for only when main-div width is overlap by content part */
+            background: var(--menuSidebar-color);
+            font-family: var(--p-font);
+        }
+        #sidebar{
+            background: var(--menuSidebar-color);
+            width: 600px;
+            height: 400px;
+            float: right;
+
+        }
+        #sidebar li{
+            list-style-type: none;
+            padding-bottom: 8px;
+            padding-left: 0;
+            margin: 0;
+        }
+        
+        #sidebar li a{
+            text-decoration: none;
+            color: black;
+        }
+        #sidebar li a:hover{
+            color: #fff;
+        }
+        .fa-solid:hover{
+            color: #fff;
+        }
+        #fotter{
+            background: var(--indication-color);
+            clear: both;
+            text-align: center;
+            height: 30px;
+            color: white;
+            padding: 3px 10px;
+            font-weight: 600;
+            font-family: var(--heading-font);
+        }
+    </style>
+</head>
+<body>
+    <div class="main-div">
+        <div id="header">
+            <h1><i class="fa-solid fa-palette"></i>Basic Design layout of the Page</h1>
+        </div>
+        <div id="menu">
+            <ul>
+                <li><a href=""><i class="fa-solid fa-house"></i> Home</a></li>
+                <li><a href=""><i class="fa-solid fa-image"></i> Gallery</a></li>
+                <li><a href=""><i class="fa-solid fa-magnifying-glass"></i> Search</a></li>
+                <li><a href=""><i class="fa-solid fa-address-book"></i> Contact Us</a></li>
+            </ul>
+        </div>
+        <div id="content">
+            <h2><i class="fa-solid fa-heading"></i> Sub Heading </h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor consectetur sint perferendis? In rem distinctio, neque vel itaque deleniti quod maiores sit. Officia vero eveniet voluptatum modi veniam cum, esse quidem earum eaque ea corrupti dignissimos distinctio tempora praesentium, nobis totam nemo reprehenderit quo delectus sapiente? Ullam at quasi repellat excepturi soluta repellendus nisi nihil architecto pariatur ratione, a officiis asperiores et. Qui, fuga est. Eum, eos quod? Molestiae doloribus, incidunt eos, ipsam perspiciatis atque magnam fuga nesciunt at voluptate minus odit! Nulla nobis cupiditate recusandae animi accusamus nostrum illo dicta, maxime repellendus fuga placeat mollitia asperiores consectetur, aperiam dignissimos id quae praesentium, tenetur eos similique? Cupiditate odio vitae quos placeat nesciunt nam sit, quisquam possimus aliquid dicta architecto obcaecati delectus. Maiores ipsum asperiores totam alias enim ad praesentium, quisquam, suscipit illo aut autem a delectus blanditiis, laborum quod distinctio. Consequuntur voluptates ipsum numquam pariatur eius harum nam minima quia reprehenderit laboriosam in maiores sunt, magni quasi, aperiam officiis ad beatae temporibus esse alias sapiente rerum velit dolore accusamus? Consequatur tempora cupiditate a eveniet expedita, similique minus autem. Harum tempore totam nesciunt officiis ea non voluptatibus repellendus. Quos atque iure iusto vel consectetur nesciunt! Porro perspiciatis quaerat dolorum accusamus ex?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati minima magnam earum hic. Corporis iure voluptatibus esse illum veritatis rerum ipsum a eos possimus quam quidem quasi, nemo similique consectetur. Commodi velit accusantium quidem consequuntur cumque animi a, dolorem repudiandae modi at ullam explicabo architecto obcaecati amet nisi, saepe adipisci.</p>  
+        </div>
+        <i class="fa-solid fa-house-blank"></i>
+        <div id="sidebar">
+            <ul>
+                <li><a href=""><i class="fa-solid fa-house"></i> Home</a></li>
+                <li><a href=""><i class="fa-solid fa-image"></i> Gallery</a></li>
+                <li><a href=""><i class="fa-solid fa-magnifying-glass"></i> Search</a></li>
+                <li><a href=""><i class="fa-solid fa-address-book"></i> Contact Us</a></li>
+            </ul>
+        </div>
+        <div id="fotter">
+            Technical Babu @Copy Rights
+        </div>
+    </div>
+</body>
+</html>

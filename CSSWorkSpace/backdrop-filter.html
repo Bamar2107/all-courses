@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BackDrop Filter</title>
+    <style>
+        .container{
+            height: 600px;
+            width: 500px;
+            border: 6px solid black;
+            background-image: url('virat.jpg');
+            display: flex;
+            align-items: center;
+            justify-content: end;
+        }
+        .inner{
+            
+            border: 2px solid white;
+            border-radius: 5px;
+            width: 270px;
+            height: 270px;
+            backdrop-filter: blur(4px);
+            text-align: center;
+            transition: backdrop-filter 0.5s;
+        }
+        .inner:hover{
+            backdrop-filter: contrast(120%);
+        }
+    </style>
+</head>
+<body>
+    <h1>Back-drop filter values</h1>
+    <p>blur, brightness ,contract ,drop-shadow ,grayscale , hue-rotate, invert, opacity, sepia, saturate, none</p>
+    <p>we can set multiple backdrop-filter values once at a time </p>
+    <div class="container"><div class="inner"><h1>Virat Kohli</h1></div></div>
+</body>
+</html>

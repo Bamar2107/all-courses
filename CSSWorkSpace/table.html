@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Properties </title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table,th,td{
+            border: 1px solid black;
+        }
+        table{
+              /*border-spacing: 8px 3px;  left right are for 1st values & next value is for top & bottom */
+             border-collapse: collapse;   /*separate is default value*/
+             width: 300px;
+             table-layout: auto;  /* another value is fixed, but problem is that in fixed if data becomes more than it overflow the data*/
+            }
+            td,th{
+                vertical-align: top;   /*Default value is middle*/
+                padding: 3px 20px;     /*1st value is fot top & bottom  and next is for left & right*/
+            }
+            caption{
+                caption-side: bottom;  /*Default value is top*/
+            }
+            tr:nth-child(even){
+                background: cadetblue;
+            }
+            tr:hover{
+                background: crimson;
+            }
+    </style>
+</head>
+<body>
+    <h1>Table Properties in CSS</h1>
+    <table>
+    <caption>Employee Records</caption>
+        <tr>
+            <th>Name</th>
+            <th>City</th>
+            <th>Savings</th>
+        </tr>
+        <tr>
+            <td>Akash Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, quasi!</td>
+            <td>Patna</td>
+            <td>3000</td>
+        </tr>
+        <tr>
+            <td>Bikash</td>
+            <td>Surat Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos, maxime.</td>
+            <td>5000</td>
+        </tr>
+        <tr>
+            <td>Prakash</td>
+            <td>Pune</td>
+            <td>7000</td>
+        </tr>
+        <tr>
+            <td>Prakash</td>
+            <td>Pune</td>
+            <td>7000</td>
+        </tr>
+        <tr>
+            <td>Prakash</td>
+            <td>Pune</td>
+            <td>7000</td>
+        </tr>
+        <tr>
+            <td>Prakash</td>
+            <td>Pune</td>
+            <td>7000</td>
+        </tr>
+    </table>
+</body>
+</html>

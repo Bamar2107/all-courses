@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Basis</title>
+    <style>
+        body{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        h1{
+            color: blueviolet;
+            font-weight: 600;
+            text-align: center;
+        }
+        .container{
+            margin: 45px auto 0;
+            border: 2px solid black;
+            width: 600px;
+
+            display: flex;
+        }
+        .items{
+            color: #fff;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            padding: 10px;
+            margin: 0px;
+            
+            
+        }
+        .item1{background: rgb(14, 155, 56);}
+        .item2{background: lightgreen;}
+        .item3{background: lightslategrey;flex-basis: 100px;}
+        .item4{background: lightcoral;}
+        .item5{background: rgb(10, 77, 77);}
+        .item6{background: royalblue;flex-basis: 200px;}
+
+    </style>
+</head>
+<body>
+    <h1>Flex basis Properties in CSS</h1>
+    <p>flex basis is about individual flex item max-width property.</p>
+    <p>if we use flex basis with flex grow then it behaves like an minimum width</p>
+    <div class="container"><div class="items item1">One</div>
+    <div class="items item2">Two</div>
+    <div class="items item3">Three</div>
+    <div class="items item4">Four</div>
+    <div class="items item5">Five</div>
+    <div class="items item6">Six</div></div>
+</body>
+</html>

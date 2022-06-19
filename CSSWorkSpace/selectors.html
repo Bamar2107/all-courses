@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <style>
+        body{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+        }
+        * div{                           /*select all div*/
+              border: 2px solid red;
+        }
+
+        .div1~p{                        /*general siblings*/
+            color: blue;
+        }
+        span{
+            background-color: lightgreen;
+        }
+        .div2+p{                         /*adjecent siblings*/
+            color: darkmagenta;
+        }
+    </style>
+</head>
+<body>
+    <h1>Selector in CSS</h1>
+    <div class="div1">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae ut dolores nemo odio eius tempore saepe. Non consequuntur quaerat asperiores?</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, animi!</p>
+    </div>
+  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe, veritatis!</p>
+  <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid, illum?</p>
+  <div class="div2">
+      <p>Lorem ipsum, dolor sit amet <span>consectetur</span> adipisicing elit. Nobis, praesentium?</p>
+      <div class="div3">
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis, molestias.</p>
+      </div>
+  </div>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident doloremque fugit inventore quasi quibusdam animi tempora nam! Voluptatem, hic eligendi sequi autem molestiae est quis illo, dolorum laborum sint esse!</p>
+  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe, veritatis!</p>
+  <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid, illum?</p>
+
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        img[alt]{                        /*attribute selectors*/
+            border: 3px solid red;
+        }
+        input[type='text']{
+            background-color: aqua;
+        }
+        p{
+            font-weight: 600;
+        }
+        p a[target='_blank']{
+            color: green;
+        }
+        input[type="password"]{
+            background-color: brown;
+        }
+        /*
+        A[attr] = selects only attribute like img[alt]
+        A[attr=value] = selects exact value of the attributr like input[type="password"]
+        A[attr^=value] = select the attribute beings with the value
+        A[attr|=value] = select the attribute beings with the value but (-) dash symbol must be there
+        A[attr$=value] = select the attribute ends with the value
+        A[attr*=value] = select the attribute if the value is placed anywhere in the attribute
+        A[attr~=value] = select the attribute only if there is a space between the value
+        */
+    </style>
+</head>
+<body>
+    <h1>Attribute Selectors in CSS</h1>
+    <img src="border1.jfif" alt="border image" width="300px" height="250px">
+    <p>Lorem ipsum dolor sit amet consectetur <a href="" target="_blank">adipisicing</a> elit. Suscipit, omnis recusandae quibusdam modi voluptatibus, asperiores veritatis beatae facere quam qui quae fugiat eos repellat nesciunt mollitia iusto autem illo, officiis est nulla impedit rerum? Voluptates, quia non saepe quas numquam in velit ad quidem, rerum recusandae, porro alias sapiente aperiam? Soluta nesciunt est dolorum temporibus ipsa maiores, adipisci necessitatibus iure vel ipsam quia non in nostrum corrupti, optio eum. Amet odit reiciendis eius ullam, voluptatum debitis a! Error consequuntur rerum officiis, adipisci, cumque animi tempore <a href="" >dolorum doloribus asperiores</a>, sint porro consequatur dicta sit enim? Quam dicta cumque necessitatibus hic repudiandae et ad facere, rem consectetur! Consequuntur obcaecati sunt porro expedita molestiae aspernatur ut facere iusto quas sit deleniti neque, perferendis minus veritatis sequi vitae vero nemo cum praesentium numquam maiores! Nemo nihil <a href="" target="_blank">dolorum doloribus asperioresdignissimos</a> quasi suscipit repudiandae hic quibusdam nesciunt magni rerum iusto repellat maiores laborum dolor, aperiam saepe dolorem iste tempora, aspernatur animi. Distinctio, ipsam quia maiores illum dolorem quos neque doloribus aspernatur repellendus commodi voluptate incidunt ducimus, eligendi sapiente, eaque ipsa eveniet tempore quas quo dolore doloremque facilis. Eos magni, asperiores doloremque cum laudantium consectetur. Totam fugit fugiat animi corporis libero consectetur error modi. Ad quae quibusdam fuga assumenda.</p>
+   <img src="border3.png" width="100px" height="150px"> <br>
+
+   <label for="">Name</label>: 
+   <input type="text"/><br><br>
+   <label for="">Password</label>: 
+   <input type="password"/>
+
+</body>
+</html>

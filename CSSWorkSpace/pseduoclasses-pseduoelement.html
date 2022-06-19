@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family:Arial, Helvetica, sans-serif;
+            font-weight: 600;
+        }
+        li:first-child{          /*must be a child of another element here li is the child of ul*/
+            color: red;
+        }
+        /* p:last-child{        select the last child element
+            color: blue;
+        } */
+        li:nth-child(3n){   /* we can calculate here also like 2n means even number or multiple of 2 
+                             2n+1 means starting from 1 and represents odd position
+                             here n starts from 0*/
+            color: green;
+        }
+        p:nth-of-type(2n){   /*select the element which are both child of another element or not*/
+            color: gold;
+        }
+        li:nth-last-of-type(1){
+            color: darkgray;
+        }
+        p:lang(de){
+            color: blueviolet;
+        }
+        p:target{
+            background: goldenrod;
+        }
+    </style>
+</head>
+<body>
+ <!-- there are 36 pseduo classes in CSS they are
+:first-child                          :required
+:last-child                          :optional
+:nth-child()            :link                 :in-range
+:nth-last-child()        :hover               :out-of-range
+:nth-last-of-type()        :visited          :read-only
+:nth-of-type()             :active              :read-write
+:only-child  = represent only perticular child, other element must not be present                           :valid
+:only-of-type = only one type of child will be there but other element can present                            
+:first-of-type = select those elements which are the child of another element or not, it selects both             :checked            :default
+:last-of-type = last of type exactly behaves as first 0f type               :disalbed            :root
+:empty = selects those elements which are completetly empty, if whitespaces are there it will not work.                    :enabled            :focus     :invalid
+:not() = select others elements which are not define inside not()..
+:lang() = represents perticular language type
+:target = represents linking of two elements, default is first value
+
+
+
+-->
+
+ <h1>Pseudo Classes in CSS</h1>
+ <ul>
+     <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
+     <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
+     <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
+     <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
+     <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
+     <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
+     <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
+     <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
+ </ul>
+ <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta facilis dignissimos quo id illum aspernatur iste cupiditate, dolor natus odit. Aperiam adipisci soluta nobis accusamus quas repudiandae aut, temporibus dolores!</p>
+ <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione sapiente modi unde architecto ut sed amet iure voluptatum consequatur maxime!</p>
+ <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam labore sint deleniti accusantium voluptatum a consectetur sequi facilis. Quas quaerat ipsum, reiciendis ducimus corporis, molestias beatae numquam nulla est quam nam quidem. Accusantium, quam quibusdam! Nisi corrupti illum praesentium quisquam!</p>
+
+ <ul>
+    <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
+    <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
+    <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
+    <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
+    <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
+    <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
+    <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
+    <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
+</ul>
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta facilis dignissimos quo id illum aspernatur iste cupiditate, dolor natus odit. Aperiam adipisci soluta nobis accusamus quas repudiandae aut, temporibus dolores!</p>
+ 
+<div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione sapiente modi unde architecto ut sed amet iure voluptatum consequatur maxime!</p>
+ <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam labore sint deleniti </p>
+</div>
+<p lang="en">Hello World, I am English Language</p>
+<p lang="fr">Hello World, I am French Language</p>
+<p lang="de">Hello World, I am German Language</p>
+
+<ul>
+    <li><a href="#html">HTML</a></li>
+    <li><a href="#css">CSS</a></li>
+    <li><a href="#js">Java Script</a></li>
+</ul>
+<p id="html">HTML is a scripting language</p>
+<p id="css">CSS is Cascading Style Sheet</p>
+<p id="js">Java Script is about how the html elements behaves</p>
+</body>
+</html>

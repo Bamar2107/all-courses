@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition Effect</title>
+    <style>
+        #box{
+            background-color: pink;
+            height: 300px;
+            width: 300px;
+            /* transition-property: all;
+            transition-duration: 2s; 
+            /*short hand code below*/
+           /* transition: width, height,background-color 2s, 2s;  transition: all 2s   we can write it like this also if we need transtition in all property*/
+        
+           /* transition-timing-function: linear; /* everthing will go with same speed
+                                       easy-in     start slow 
+                                       easy-out     End becomes slow
+                                       
+                                       easy-in-out   both becomes slow
+                                       steps(5) 
+                                       cubic-bezier(0.5,0.7,1.0,0.5)  customized your transition & also gives smoothness*/
+        /*transition-delay: 1s; 
+        
+        short-hand of above four*/
+
+        transition: all 2s cubic-bezier(1, 0.4, 0.320, 0.8) 1s;
+    margin-bottom: 60px;
+
+        }
+        #box:hover{
+            width: 500px;
+            height: 500px;
+            background-color: orangered;
+        }
+        input{
+            width: 150px;
+            background: white;
+            transition: all 1.2s;
+        }
+        input:focus{
+            width: 300px;
+            background: green;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Transition Effect in CSS</h1>
+<div id="box"></div></body>
+<input type="text">
+</html>

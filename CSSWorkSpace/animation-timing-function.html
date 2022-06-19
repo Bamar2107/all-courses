@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+        }
+        div{
+            height: 70px;
+            width: 300px;
+            border: 2px solid black;
+            display: block;
+            margin-top: 9px;
+            margin-bottom: 5px;
+        }
+        .div1{
+            background-color: aqua;
+            animation: div1 2s linear 2s infinite alternate;
+
+        }
+        
+        .div2{
+            background-color: yellow;
+            animation: div2 2s ease 2s infinite alternate;
+        }
+        
+        .div3{
+            background-color: green;
+            animation: div3 2s ease-in 2s infinite alternate;
+        }
+        .div4{
+            background-color: red;
+            animation: div4 2s ease-out 2s infinite alternate;
+        }
+        .div5{
+            background-color: blue;
+            animation: div5 2s ease-in-out 2s infinite alternate;
+        }
+        .div6{
+            background-color: orange;
+            animation: div6 2s step-start 2s infinite alternate;
+        }
+        .div7{
+            background-color: violet;
+            animation: div7 2s step-end 2s infinite alternate;
+        }
+        .div8{
+            background-color: purple;
+            animation: div8 2s steps(4) 2s infinite alternate;
+        }
+        .div9{
+            background-color: cyan;
+            animation: div9 2s cubic-bezier(0.215, 0.610, 0.355, 1) 2s infinite alternate;
+        }
+
+        @keyframes div1{
+            0%{width: 300px;}
+            100%{width:700px;}
+        }
+        @keyframes div2{
+            0%{width: 300px;}
+            100%{width:700px;}
+        } @keyframes div3{
+            0%{width: 300px;}
+            100%{width:700px;}
+        } @keyframes div4{
+            0%{width: 300px;}
+            100%{width:700px;}
+        } @keyframes div5{
+            0%{width: 300px;}
+            100%{width:700px;}
+        } @keyframes div6{
+            0%{width: 300px;}
+            100%{width:700px;}
+        } @keyframes div7{
+            0%{width: 300px;}
+            100%{width:700px;}
+        } @keyframes div8{
+            0%{width: 300px;}
+            100%{width:700px;}
+        } @keyframes div9{
+            0%{width: 300px;}
+            100%{width:700px;}
+        }
+    </style>
+</head>
+<body>
+    <div class="div1">Linear</div>
+    <div class="div2">Ease</div>
+    <div class="div3">Ease In</div>
+    <div class="div4">Ease Out</div>
+    <div class="div5">Ease in out</div>
+    <div class="div6">step start</div>
+    <div class="div7">step end</div>
+    <div class="div8">steps</div>
+    <div class="div9">cubic-bezier</div>
+
+</body>
+</html>

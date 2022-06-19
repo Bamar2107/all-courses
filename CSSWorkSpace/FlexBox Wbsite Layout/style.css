@@ -1,0 +1,173 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+header{
+    background: rgb(60, 83, 14);
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
+header ul{
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+nav li:hover{
+    background-color: #eee;
+}
+nav li:hover a{
+    color: rgb(60, 83, 14);
+}
+.fa-brands{
+    color: #eee;
+    font-size: 20px;
+}
+#social-links li:hover{
+    background-color: #eee;
+}
+#social-links li:hover .fa-brands{
+    color: rgb(60, 83, 14);
+}
+#main{
+    display: flex;
+    background-color: rgb(74,74,74);
+}
+article{
+    padding: 10px;
+}
+article h2{
+    color: #eee;
+}
+.service-title h3{
+    color: #eee;
+}
+aside{
+    flex:0 0 20vw;
+    background-color: rgb(74,74,74);
+    padding: 10px;
+}
+aside ul{
+    list-style-type: none;
+    padding: 0;
+}
+aside ul a{
+    color: #eee;
+    padding: 10px;
+    display: block;
+    border-bottom: 2px solid #eee;
+}
+aside img{
+    width: 100%;
+}
+ a{
+    text-decoration: none;
+    color: #eee;
+}
+a:hover{
+    background-color: gainsboro;
+    color: rgb(9, 9, 87);
+}
+#logo{
+    margin: 0 auto;
+    color: rgb(238, 237, 245);
+    font-size: 30px;
+}
+#menu li{
+    padding: 10px;
+}
+#social-links li{
+    padding: 10px;
+}
+
+.service-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+.service-box{
+    border: 2px solid #eee;
+    flex-basis: 32%;
+    max-width: 370px;
+    padding: 10px;
+    display: flex;
+    margin-bottom: 10px;
+    flex-direction: column;
+}
+.service-box h3{
+    margin: 5px 0 5px;
+}
+.service-box p{
+    margin: 5px 0 5px;
+}
+.call-to-action{
+    align-self: flex-start;
+    margin-top: auto;
+}
+.call-to-action a{
+    background-color: rgb(74,74,74);
+    color: #eee;
+    padding: 10px;
+    display: block;
+}
+.call-to-action a:hover{
+    background-color: #eee;
+    color: rgb(74,74,74);
+    padding: 10px;
+}
+.service-box img{
+    width: 100%;
+}
+footer{
+    background-color: rgb(60, 83, 14);
+    text-align: center;
+    color: #eee;
+    padding: 15px;
+}
+
+
+@media screen and (max-width:570px){
+    #menu li{
+        padding: 5px;
+    }
+}
+
+@media screen and (max-width:600px) {
+ header{
+     flex-direction: column;
+ }
+ #logo{
+     order: -1;
+ }
+ article{
+     order: -1;
+ }
+ #main{
+     flex-direction: column;
+ }
+ .service-container{
+     flex-direction: column;
+     align-items: center;
+ }
+ h2{
+     text-align: center;
+ }
+}
+
+
+@media screen and (max-width:680px) {
+    aside{
+        flex:0 0 25vw;
+}
+.service-box{
+    flex-basis: 48%;
+}
+}
+

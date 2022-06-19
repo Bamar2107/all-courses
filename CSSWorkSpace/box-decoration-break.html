@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Decoration Break</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        span{
+            background-image: linear-gradient(red,yellow);
+            border: 2px solid black;
+            border-radius: 5px;
+            line-height: 30px;
+            -webkit-box-decoration-break: clone;  /*slice is the default value
+            we need to add prefix because most of the browser still not support this feature*/
+        }
+    </style>
+</head>
+<body>
+    <h1>Box Decoration Break Properties in CSS</h1>
+    <span>Lorem ipsum dolor <br>sit, amet consectetur<br> adipisicing elit.<br> Iusto, dicta?</span>
+</body>
+</html>

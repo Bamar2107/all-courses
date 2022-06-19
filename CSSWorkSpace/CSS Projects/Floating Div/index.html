@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floating Div</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-weight: 700;
+            text-align: center;
+            background-color: rgb(22, 22, 87);
+        }
+        h1{
+            color: aliceblue;
+        }
+        .container{
+            border: 2px solid aliceblue;
+            height: 100px;
+            width: 800px;
+            margin: 20px auto 0 ;
+        }
+        .child{
+            height: 100%;
+            width: 10%;
+            background-color: rgb(122, 31, 31); 
+        }
+        h3{
+            text-align: center;
+            color: aliceblue;
+        }
+        .child:hover{
+            animation: float 6s linear infinite alternate ;
+            background-color: rgb(255, 255, 255);
+            
+        }
+        .child:hover h3{
+            color:rgb(122, 31, 31) ;
+        }
+        @keyframes float {
+            0%{transform: translateX(0px);}
+            20%{transform: translateX(160px);}
+            40%{transform: translateX(320px);}
+            60%{transform: translateX(480px);}
+            80%{transform: translateX(640px);}
+            100%{transform: translateX(720px);}
+            
+        }
+          
+    </style>
+</head>
+<body>
+    <h1>Floating Div</h1>
+    <h3></h3>
+    <div class="container">
+        <div class="child"><h3>Hover Me to Float</h3></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>important Properties</title>
+    <style>
+        h1{
+            color: blue;
+            font-size: 40px;
+        }
+        #second{
+            color: aqua;
+        }
+        .first{
+            color: rebeccapurple !important;
+        }
+        p{
+            color: red;
+            font-size: 20px;
+            font-weight: 600;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1 class="first" id="second" style="color: brown;">In CSS, style have applied on selectors on some specific order like first in inline, then id, then class & lastly by tag name. If we set all these properties to a single element then, only inline properties value will be visible. But if we want to display other selector value then we need to set !important at the last of the perticular property value </h1>
+<p>Here we take the color property value for the above h1 tag</p>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calc Function in CSS</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        #box1{
+            background: violet;
+            width: 100%;
+            height: 100px;
+        }
+        #box2{
+            background: red;
+            width: 100%;
+            height: calc(100vh - 200px);
+            color: whitesmoke;
+        }
+        #box3{
+            background: green;
+            width: 100%;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div id="box1">Box 1</div>
+    <div id="box2">Box 2 <br>Here Box 2 height is calculated as, it takes all the area of viewport height i.e 100 & substracted both 100px from
+    Box 1 & Box 3 so that if we resizing it then contents remains inside the box & user will not get any scroll bar <br>
+we can use Calc function in different way like calculating the images width & height, to place any div element to the center of its parents div etc.. </div>
+        <div id="box3">Box 3</div>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Back Face Visibility</title>
+   <style>
+       body{
+           font-family: Arial, Helvetica, sans-serif;
+           background: #eee;
+       }
+       .main{
+           height: 300px;
+           width: 300px;
+           border: 0px solid black;
+           position: absolute;
+           left: 50%;
+           top: 50%;
+           margin: -150px;
+           perspective: 500px;
+
+       }
+       .content{
+           height: 100%;
+           width: 100%;
+           position: absolute;
+       }
+
+       .main:hover .content{
+           transform: rotateY(180deg);
+           transition: transform 2s;
+           transform-style: preserve-3d;
+       }
+
+       .front , .back{
+             height: 100%;
+           width: 100%;
+           position: absolute;
+           background-color: #fff;
+           color: tomato;
+           font-size: 60px;
+           text-align: center;
+           line-height: 300px;
+           border-radius: 12px;
+           backface-visibility: hidden;
+           
+       }
+       .back{
+           background-color: tomato;
+           color: #fff; 
+           transform: rotateY(180deg);
+           
+           
+       }
+   </style>
+
+</head>
+<body>
+    <h1>Backface Visibility</h1>
+    <div class="main">
+         <div class="content">
+             <div class="front">Front</div>
+             <div class="back">Back</div>
+         </div>
+    </div>
+</body>
+</html>

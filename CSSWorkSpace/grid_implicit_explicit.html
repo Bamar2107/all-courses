@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Implicit Explicit</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+        .container{
+            background-color: wheat;
+            width: 700px;
+            margin: 45px auto 0;
+            display: grid;
+            grid-gap: 5px;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 100px);
+
+            grid-auto-rows: 80px;
+            grid-auto-flow: column;
+            grid-auto-columns: .5fr;
+        }
+        .items1{background: green;}
+        .items2{background: blue;}
+        .items3{background: orange;}
+        .items4{background: red;}
+        .items5{background: violet;}
+        .items6{background: goldenrod;}
+        .items7{background: gray;}
+        .items8{background: purple;}
+    </style>
+</head>
+<body>
+    <h1>Grid Implicit Explicit Properties</h1>
+    <p>Here item 1 to item 4 are called explicit grid item & remaing are called implicit grid items</p>
+    <div class="container">
+    <div class="items items1">Item1</div>
+    <div class="items items2">Item2</div>
+    <div class="items items3">Item3</div>
+    <div class="items items4">Item4</div>
+    <div class="items items5">Item5</div>
+    <div class="items items6">Item6</div>
+    <div class="items items7">Item7</div>
+    <div class="items items8">Item8</div></div>
+</body>
+</html>

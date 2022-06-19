@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Fit Content</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 600;
+            
+        }
+        h1{
+            color: brown;
+            font-weight: 600;
+            text-align: center;
+        }
+        .container{
+            color: #fff;
+            background-color: rgb(223, 217, 205);
+            width: 80%;
+            margin: 45px auto 0;
+            display: grid;
+            grid-template-columns: fit-content(300px) fit-content(300px) 1fr ;
+            
+            grid-template-rows: repeat(2, minmax(150px, min-content));
+            grid-auto-rows: 80px;
+            
+        }
+        .items1{background: green;}
+        .items2{background: blue;}
+        .items3{background: orange;}
+        .items4{background: red;}
+        .items5{background: violet;}
+        .items6{background: cyan;}
+
+        
+    </style>
+</head>
+<body>
+    <h1>Grid Fit Content</h1>
+    <div class="container">
+    <div class="items items1">One Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia exercitationem quae, dolore facere maiores illo, quaerat aliquam iusto veniam non molestiae harum nemo cum! Nihil mollitia qui consequatur voluptatibus a magni praesentium, blanditiis voluptates labore laudantium et quae eum dolores officiis odio maiores placeat, corrupti molestiae cumque quidem doloremque voluptatum cum explicabo. A illo quas necessitatibus, dignissimos pariatur dolores voluptatibus.
+    </div>
+    <div class="items items2">Two Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni dignissimos sed ut perspiciatis, laudantium quis autem rerum maiores fugit eius mollitia ea fugiat a illum nesciunt dolores architecto nobis fuga maxime. Hic et ratione laudantium blanditiis, at, atque asperiores nobis consectetur repudiandae aut modi quidem facere nisi earum sed dolores?
+    </div>
+    <div class="items items3">Three</div>
+    <div class="items items4">Four</div>
+    <div class="items items5">Five</div>
+    <div class="items items6">Six</div>
+    </div>
+</body>
+</html>

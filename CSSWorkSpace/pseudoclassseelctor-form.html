@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Class Selector</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 600;
+        }
+        input:focus{
+            border: 3px solid black;
+        }
+        input[type='email']:focus{
+            border: 3px solid black;
+        }
+        input:required{
+            border: 2px solid blue;
+        }
+        input:disabled{
+            border: 2px solid black;
+            background: rgb(199, 193, 193);
+        }
+
+        input[type='checkbox']:checked + label{
+            color:rgb(2, 255, 15);
+        }
+        input[type='radio']:checked + label{
+            color: rgb(2, 255, 15);
+        }
+        input[type='number']:in-range{
+            background-color: wheat;
+        }
+        input[type='number']:out-of-range{
+            background-color: red;
+            color: whitesmoke;
+            border: 2px solid black;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Pseudo Class Selector</h1>
+    <form action="">
+        <label>first Name</label>:
+        <input type="text" required> <br><br>
+        <label>Last Name</label>:
+        <input type="text" disabled> <br><br>
+
+        <label for="">Age</label>:
+        <input type="number" min="12" max="28"> <br><br>
+        <label for="">Your email id</label>:
+        <input type="email"> <br><br>
+
+        <label>Hobbies</label>:
+        <input type="checkbox" name="hobby"> <label>Sports</label>
+        <input type="checkbox" name="hobby"> <label>Music</label>
+        <input type="checkbox" name="hobby"> <label>Travel</label>
+        <input type="checkbox" name="hobby"> <label>Writing</label>
+        <input type="checkbox" name="hobby"> <label>Entertainment</label> <br><br>
+
+        <label>Gender</label>:
+        <input type="radio" name="gender"><label for="">Male</label>
+        <input type="radio" name="gender"><label for="">Female</label> <br><br>
+
+        <label>Your Country</label>:
+        <select name="country" id="">
+            <option value="none">Select</option>
+            <option value="India">India</option>
+            <option value="pakistan">pakistan</option>
+            <option value="Sri Lanka">Sri Lanka</option>
+            <option value="USA">USA</option>
+        </select> <br><br>
+
+        <button type="submit">Submit</button>
+
+    </form>
+</body>
+</html>

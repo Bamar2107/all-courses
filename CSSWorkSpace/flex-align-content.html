@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex align-content in CSS</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 600;
+            font-style: italic;
+        }
+        h1{
+            color: red;
+            text-align: center;
+        }
+        .container{
+            border: 2px solid black;
+            background-color: aliceblue;
+            width: 350px;
+            height:350px;
+            margin: 50px auto 0;
+            padding: 10px;
+            
+            display: flex;
+            flex-wrap: wrap;
+            align-content: space-evenly;
+        
+            
+
+            
+           
+        }
+        .items{font-style: italic; padding: 5px;text-align: center;margin: 5px;}
+        .item1{background-color: lightgreen;}
+        .item2{background-color: lightcoral;}
+        .item3{background-color: lightblue;}
+        .item4{background-color: lightgray;}
+        .item5{background-color: lightseagreen;}
+        .item6{background-color: greenyellow;}
+        .item7{background-color: lightgreen;}
+        .item8{background-color: lightcoral;}
+    </style>
+</head>
+<body>
+    <h1>Flex Align-content in css</h1>
+    <p>Flex Align-content value</p>
+    <ul>
+        <li>stretch (Default value)</li>
+        <li>flex-start</li>
+        <li>flex-end</li>
+        <li>center</li>
+        <li>space-around</li>
+        <li>space-between</li>
+        <li>space-evenly</li>
+    </ul>
+    <div class="container">
+        <div class="items item1">Box1</div>
+        <div class="items item2">Box2</div>
+        <div class="items item3">Box3</div>
+        <div class="items item4">Box4</div>
+        <div class="items item5">Box5</div>
+        <div class="items item6">Box6</div>
+        <div class="items item7">Box7</div>
+        <div class="items item8">Box8</div>
+    </div>
+</body>
+</html>

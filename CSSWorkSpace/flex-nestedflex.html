@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Nested Flex</title>
+    <style>
+        body{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        h1{
+            color: blueviolet;
+            font-weight: 600;
+            text-align: center;
+        }
+        .container{
+            margin: 45px auto 0;
+            border: 2px solid black;
+            /* width: 300px; */
+
+            display: flex;
+            flex-direction: column;
+        }
+        .items{
+            color: #fff;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            padding: 10px;
+            margin: 0px;
+             height: 100px; 
+            
+            
+        }
+        .item1{background: rgb(14, 155, 56);}
+        .item2{background: lightgreen;}
+        .item3{
+            background: lightslategrey;
+            display: flex;
+        }
+       .item3 > .subitems{
+              background-color: wheat;
+              color: black;
+              margin: 5px;
+              flex-grow: 1;
+        }
+        .item4{background: lightcoral;}
+       
+
+    </style>
+</head>
+<body>
+    <h1>Nested Flex in CSS</h1>
+    <div class="container"><div class="items item1">One</div>
+    <div class="items item2">Two</div>
+    <div class="items item3"> <div class="subitems sub1">A</div>
+    <div class="subitems sub2">B</div>
+    <div class="subitems sub3">C</div></div>
+    <div class="items item4">Four</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object-fit</title>
+    <style>
+        .box{
+            width: 300px;
+            border: 2px solid red;
+            float: left;
+            margin: 0 10px;
+        }
+        .box img{
+            width: 100%;
+           aspect-ratio: 1;
+           object-fit:cover;
+           object-position: bottom;
+        }
+        .box p{
+            padding: 5px 5px;
+        }
+        @media screen and (max-width:987px) {
+            .box{
+                margin: 10px 10px;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Object Fit in CSS</h1>
+    <div class="box">
+        <img src="virat.jpg" alt="">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur accusantium nam obcaecati aut itaque architecto quos numquam, ab porro est?</p>
+    </div>
+    <div class="box">
+        <img src="./FlexBox Wbsite Layout/mobile.jpg" alt="">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur accusantium nam obcaecati aut itaque architecto quos numquam, ab porro est?</p>
+    </div>
+    <div class="box">
+        <img src="./FlexBox Wbsite Layout/web.jpg" alt="">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur accusantium nam obcaecati aut itaque architecto quos numquam, ab porro est?</p>
+    </div>
+</body>
+</html>

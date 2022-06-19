@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid MinMax</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+        .container{
+            background-color: wheat;
+            width: 700px;
+            margin: 45px auto 0;
+            display: grid;
+            grid-template-columns: minmax(150px, min-content) 1fr 1fr min-content;
+           
+            /* minmax 1st value is minimum length of the column we can give it in % 0r 1fr and in pixels also,
+            2nd value is maxmimum length, here we set the maximum value as min-content means if we add any content to our div
+            it will automatically stretch its length according to the content. */
+
+            grid-template-rows: repeat(2,minmax(150px, min-content));
+            grid-gap: 5px;
+        }
+        .items1{background: green;}
+        .items2{background: blue;}
+        .items3{background: orange;}
+        .items4{background: red;}
+        .items5{background: violet;}
+        .items6{background: goldenrod;}
+        .items7{background: gray;}
+        .items8{background: purple;}
+    </style>
+</head>
+<body>
+    <h1>Grid Min Max Function</h1>
+    <div class="container">
+    <div class="items items1">Item1 Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+    <div class="items items2">Item2</div>
+    <div class="items items3">Item3</div>
+    <div class="items items4">Item4 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, obcaecati.</div>
+    <div class="items items5">Item5</div>
+    <div class="items items6">Item6</div>
+    <div class="items items7">Item7 Lorem ipsum dolor, sit amet consectetur adipisicing elit. MolestiasItem7 Lorem ipsum dolor, sit amet consectetur adipisicing elit. MolestiasItem7 Lorem ipsum dolor, sit amet consectetur adipisicing elit. MolestiasItem7 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias accusamus incidunt autem amet velit reiciendisItem7 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias.</div>
+    <div class="items items8">Item8</div></div>
+</body>
+</html>

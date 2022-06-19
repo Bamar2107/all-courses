@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Elements</title>
+    <style>
+        /* there are 6 pseduo elemnents presents 
+        after, before, first-letter, first-line, selection, placeholder */
+    body{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: 500;
+    }
+    /* p::first-letter{
+        color: red;
+        font-size: 40px;
+        font-weight: 500;
+    } */
+    p::first-line{
+        color: red;
+        font-size: 20px;
+        font-weight: 500;
+    }
+    p::selection{
+        background: green;
+        color: #fff;
+    }
+    li::first-letter{
+        color: blue;
+        font-size: 40px;
+        font-weight: 500;
+    }
+    ::placeholder{
+        color: blue;
+        font-size: medium;
+    }
+    </style>
+</head>
+<body>
+    <h1>Pseudo Elements</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum amet hic totam nobis tempore sed sint eos consequatur, voluptas ratione cupiditate voluptatibus sit veniam repellat, tempora minus nisi officiis cumque id provident quis dolorem minima deleniti. Cupiditate sint distinctio reiciendis libero, hic voluptate modi voluptatum dignissimos earum aliquid tempore, quod, molestiae deleniti vero doloribus cum beatae quasi? Repudiandae est fuga velit voluptates iste maiores harum perspiciatis aliquam asperiores adipisci delectus enim consequatur ea iusto tempora consequuntur, aspernatur obcaecati ipsam eum illo ducimus similique pariatur voluptate laudantium? Doloremque, velit? Impedit provident voluptate voluptates reprehenderit voluptas neque veritatis rerum nobis quasi laboriosam ipsam iusto nesciunt, incidunt enim autem in cum minima magni ab id at doloremque. Veritatis asperiores atque error repellat facere optio modi dolores aspernatur corporis reiciendis voluptatibus exercitationem, quis officiis quod? Nisi, incidunt ad mollitia non excepturi quis porro reprehenderit ipsa, beatae nemo quae enim ab maxime delectus. Animi rerum omnis saepe dicta praesentium ea ratione cumque aut, ipsum itaque laborum! Quas, quibusdam tempore. Ut repellendus labore vitae laudantium, deleniti, totam eligendi autem eveniet blanditiis iste, voluptatem architecto pariatur. Delectus illo fuga facere, ut incidunt corrupti aperiam dolor cumque excepturi et atque, consectetur expedita perferendis sunt non similique labore rem?</p>
+     <ul>
+         <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+         <li>Lorem ipsum dolor sit amet.</li>
+         <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+         <li>Lorem ipsum dolor sit amet.</li>
+         <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+         <li>Lorem ipsum dolor sit amet.</li>
+        </ul>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio expedita ea assumenda id odit deleniti animi harum qui tempore optio quas pariatur perferendis, dolore quis, libero eos quod, earum perspiciatis iste dolores ut quasi? Corporis at commodi numquam, doloribus, nihil et provident cumque quia molestiae dolores mollitia pariatur quam ducimus.</p>
+
+ <label for="">First Name</label>:<input type="text" placeholder="Enter first name"><br><br>
+ <label for="">Last Name</label>:<input type="text" placeholder="Enter last name">
+</body>
+</html>

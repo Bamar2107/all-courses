@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform style in CSS</title>
+    <style>
+         body div{
+        display: inline-block;
+       }
+       #parent{
+           width: 350px;
+           height: 250px;
+           background-color: gray;
+           font-size: 10px;
+           text-align: center;
+           margin: 100px 0 0 100px;
+           perspective: 600px;
+           transform: rotateY(30deg);
+           transform-style: preserve-3d;
+       }
+       #child{
+        width: 350px;
+           height: 250px;
+           background-color: tomato;
+           transform: rotateX(60deg);
+           font-size: 20px;
+           color: white;
+           
+       }
+
+    </style>
+</head>
+<body>
+    <h1>transform style in CSS</h1>
+    <div id="parent">
+        <div id="child">Child Div Transform Style in CSS</div>
+    </div>
+    
+</body>
+</html>

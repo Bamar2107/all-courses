@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rid AutoFill & AutoFit</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 600;
+            
+        }
+        h1{
+            color: brown;
+            font-weight: 600;
+            text-align: center;
+        }
+        .container{
+            color: #fff;
+            background-color: rgb(223, 217, 205);
+            width: 80%;
+            margin: 45px auto 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
+
+ /* with the help of auto-fit & minmax function we can set the grid items responsive without write media query */
+/* the major difference between auto-fill & auto-fit is, auto-fill stretch total length of the main container but auto-fit occupies total
+        length of the perticular item. Means in case of auto-fill if we pass grid-column/row-end:-1 then it will works but in case of auto-fit 
+        it will not work. */
+            
+            grid-template-rows: repeat(2, 100px);
+            grid-auto-rows: 80px;
+            
+        }
+        .items1{background: green;}
+        .items2{background: blue;}
+        .items3{background: orange;}
+        .items4{background: red;}
+
+        
+    </style>
+</head>
+<body>
+    <h1>Grid AutoFill & AutoFit</h1>
+    <div class="container">
+    <div class="items items1">One</div>
+    <div class="items items2">Two</div>
+    <div class="items items3">Three</div>
+    <div class="items items4">Four</div>
+    </div>
+</body>
+</html>

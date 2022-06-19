@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>user select</title>
+    <style>
+        h1{
+            user-select: none;
+        }
+        .box{
+            width: 400px;
+            height: 200px;
+            border: 2px solid black;
+            background-color: bisque;
+            overflow-y: scroll;
+            user-select: text;
+            /*text, auto, all are the other values of user select
+            none = gives security, means user can not select 
+            text = user can select text
+            auto= by doble click user can select text, but if you disable to select any text from javascript then auto will not work'
+            all = by single click user can select text*/
+        }
+    </style>
+</head>
+<body>
+    <h1>User Select Properties</h1>
+    <div class="box">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias facilis sapiente est sequi. Optio assumenda tempore quaerat fuga aliquam minus ab corporis dignissimos. Reiciendis excepturi, qui ullam minima fugiat rem quo impedit modi culpa officiis incidunt harum consequatur doloribus atque accusamus soluta molestiae. Corporis quasi eligendi deserunt tempore aperiam, odit, iure quisquam laboriosam optio repellendus repudiandae minus, ab consequatur molestiae quod consectetur? Nobis harum molestiae alias modi, quod similique, ipsa temporibus consectetur debitis dolor unde cupiditate quia delectus doloribus sapiente, deserunt exercitationem possimus at tempore quisquam mollitia repellendus suscipit blanditiis numquam! Quod qui quas adipisci animi ea temporibus? Alias, unde qui deleniti iusto maiores quae illo reprehenderit, harum iste, est dignissimos omnis sit voluptas labore debitis! Quasi, laborum officia! Quos aperiam exercitationem eveniet optio suscipit facere, at quibusdam maxime. Asperiores doloremque iusto nesciunt ab eos porro facere ullam nihil, aperiam cum voluptatum impedit accusantium aliquam accusamus ducimus incidunt ipsum iste.</p>
+    </div>
+</body>
+</html>

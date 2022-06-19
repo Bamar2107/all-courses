@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background: #eee;
+        }
+        .main{
+            height: 300px;
+            width: 300px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin: -150px;
+            text-align: center;
+            font-size: 24px;
+            line-height: 300px;
+            color: #eee;
+            background-color: tomato;
+            box-shadow: 0px 10px 10px 0px black;
+            /* animation-name: sample;
+            animation-duration: 2s;
+            animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1);  ease, ease out, step-in,step-out,steps(4) are the others value
+            animation-delay: 3s;
+            animation-iteration-count: infinite;
+            animation-direction:alternate ;  normal , reverse, alternate-reverse are the other values  */
+
+            animation: sample 2s cubic-bezier(0.215, 0.610, 0.355, 1) 2s infinite alternate;  /*short hand*/
+        }
+
+        @keyframes sample {  /*syntax to create animations apart from sample we can use any name to our animation*/
+            /* from{border-radius: 0%;}
+            to{border-radius: 50%;} */
+
+            0%{border-radius: 0%;}
+            100%{border-radius: 50%;background-color: #eee;color: tomato;}
+        }
+    </style>
+</head>
+<body>
+    <h1>Animations in html</h1>
+    <div class="main">
+         Animations Div
+    </div>
+</body>
+</html>

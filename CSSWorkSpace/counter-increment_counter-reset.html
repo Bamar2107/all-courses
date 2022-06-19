@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter in CSS</title>
+    <style>
+        body{
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: 500;
+            counter-reset: my-counter;
+            /*by default counter start from 0 & it prints numeric digits*/
+        }
+        h2::before{
+            content: "Chapter " counter(my-counter, upper-roman) " : ";   /*here we can delcare our own counter symbol like lower alpha, roman letter*/
+            counter-increment: my-counter 1;
+            color: crimson;
+        }
+    </style>
+</head>
+<body>
+    <h1>Counter Reset & Couter Increment in CSS</h1>
+    <h2>Lorem ipsum dolor sit amet.</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae modi reiciendis sit ipsam dolorum id tenetur, placeat recusandae sunt, iure commodi eaque natus, obcaecati neque repellat quos dolores. Rem voluptatem illum laboriosam aliquam harum odit modi! Provident itaque vitae culpa. Sint, provident voluptatum molestias, dicta assumenda similique perspiciatis cumque velit consequatur hic temporibus fugit veritatis pariatur saepe sed non dignissimos explicabo ut sunt aliquid architecto vero natus, inventore amet? Explicabo, voluptates saepe? Ipsum dolores doloribus error explicabo voluptatem! Odit tempore provident eius sint ipsam numquam dolores fuga sapiente quas iste nobis facilis minima, omnis itaque? Odit ex omnis fugiat quae?</p>
+    <h2>Lorem ipsum dolor sit amet.</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae modi reiciendis sit ipsam dolorum id tenetur, placeat recusandae sunt, iure commodi eaque natus, obcaecati neque repellat quos dolores. Rem voluptatem illum laboriosam aliquam harum odit modi! Provident itaque vitae culpa. Sint, provident voluptatum molestias, dicta assumenda similique perspiciatis cumque velit consequatur hic temporibus fugit veritatis pariatur saepe sed non dignissimos explicabo ut sunt aliquid architecto vero natus, inventore amet? Explicabo, voluptates saepe? Ipsum dolores doloribus error explicabo voluptatem! Odit tempore provident eius sint ipsam numquam dolores fuga sapiente quas iste nobis facilis minima, omnis itaque? Odit ex omnis fugiat quae?</p>
+    <h2>Lorem ipsum dolor sit amet.</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae modi reiciendis sit ipsam dolorum id tenetur, placeat recusandae sunt, iure commodi eaque natus, obcaecati neque repellat quos dolores. Rem voluptatem illum laboriosam aliquam harum odit modi! Provident itaque vitae culpa. Sint, provident voluptatum molestias, dicta assumenda similique perspiciatis cumque velit consequatur hic temporibus fugit veritatis pariatur saepe sed non dignissimos explicabo ut sunt aliquid architecto vero natus, inventore amet? Explicabo, voluptates saepe? Ipsum dolores doloribus error explicabo voluptatem! Odit tempore provident eius sint ipsam numquam dolores fuga sapiente quas iste nobis facilis minima, omnis itaque? Odit ex omnis fugiat quae?</p>
+    <h2>Lorem ipsum dolor sit amet.</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae modi reiciendis sit ipsam dolorum id tenetur, placeat recusandae sunt, iure commodi eaque natus, obcaecati neque repellat quos dolores. Rem voluptatem illum laboriosam aliquam harum odit modi! Provident itaque vitae culpa. Sint, provident voluptatum molestias, dicta assumenda similique perspiciatis cumque velit consequatur hic temporibus fugit veritatis pariatur saepe sed non dignissimos explicabo ut sunt aliquid architecto vero natus, inventore amet? Explicabo, voluptates saepe? Ipsum dolores doloribus error explicabo voluptatem! Odit tempore provident eius sint ipsam numquam dolores fuga sapiente quas iste nobis facilis minima, omnis itaque? Odit ex omnis fugiat quae?</p>
+    <h2>Lorem ipsum dolor sit amet.</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae modi reiciendis sit ipsam dolorum id tenetur, placeat recusandae sunt, iure commodi eaque natus, obcaecati neque repellat quos dolores. Rem voluptatem illum laboriosam aliquam harum odit modi! Provident itaque vitae culpa. Sint, provident voluptatum molestias, dicta assumenda similique perspiciatis cumque velit consequatur hic temporibus fugit veritatis pariatur saepe sed non dignissimos explicabo ut sunt aliquid architecto vero natus, inventore amet? Explicabo, voluptates saepe? Ipsum dolores doloribus error explicabo voluptatem! Odit tempore provident eius sint ipsam numquam dolores fuga sapiente quas iste nobis facilis minima, omnis itaque? Odit ex omnis fugiat quae?</p>
+    
+</body>
+</html>

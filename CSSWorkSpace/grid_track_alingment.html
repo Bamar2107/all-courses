@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Track Alingment</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 600;
+            
+        }
+        h1{
+            color: brown;
+            font-weight: 600;
+            text-align: center;
+        }
+        .container{
+            color: #fff;
+            background-color: wheat;
+            width: 700px;
+            height: 700px;
+            margin: 45px auto 0;
+            display: grid;
+            grid-gap: 5px;
+            grid-template-columns: repeat(2, 150px);
+            grid-template-rows: repeat(4, 150px);
+            justify-content: space-evenly;  /*by default value is start
+            other value are end,space-between,space-around,space-evenly*/
+            align-content: space-evenly; /*other values are same as justify-content*/
+
+            /* grid-auto-flow: column dense; this property is used when some of the element move their original position while aling its position 
+            defalut value is row.*/
+        }
+        .items1{background: green;}
+        .items2{background: blue;}
+        .items3{background: orange;}
+        .items4{background: red;}
+        .items5{background: violet;}
+        .items6{background: goldenrod;}
+        .items7{background: gray;}
+        .items8{background: purple;}
+    </style>
+</head>
+<body>
+    <h1>Grid Track Alingment</h1>
+    <div class="container">
+    <div class="items items1">One</div>
+    <div class="items items2">Two</div>
+    <div class="items items3">Three</div>
+    <div class="items items4">Four</div>
+    <div class="items items5">Five</div>
+    <div class="items items6">Six</div>
+    <div class="items items7">Seven</div>
+    <div class="items items8">Eight</div></div>
+</body>
+</html>

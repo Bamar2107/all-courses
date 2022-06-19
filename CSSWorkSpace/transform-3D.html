@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>#D Transform</title>
+    <style>
+        #base{
+            background: grey;
+            height: 300px;
+            width: 300px;
+            margin: 200px 400px;
+        }
+        #child{
+            background: indianred;
+            border: 3px solid black;
+            height: 300px;
+            width: 300px;
+            text-align: center;
+            color: lavender;
+            /* transform: perspective(800px) rotateZ(60deg);  the more perspective lesser will be the effect & vice-versa */
+            /* transform: perspective(800px) rotateY(60deg) translateZ(300px); */
+            transform: perspective(800px) rotateY(60deg) translate3d(0px,0px,100px);  /*translate3d(X,Y & Z direction)*/
+            transition: transform linear 2s; 
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>3D transform properties in CSS</h1>
+    <div id="base">
+        <div id="child">I am child Div</div>
+    </div>
+</body>
+</html>
