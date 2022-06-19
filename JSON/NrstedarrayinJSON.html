@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>accessing nested array using loop</h2>
+    <div id="demo"></div>
+    <script>
+        var obj,i,j,x="";
+        obj =
+            {"name":"amar",
+        "age":26,
+         "couses": [
+             {"catname":"website Development", "cname":["HTML","CSS","JS"]},
+             { "catname":"Mobile Development", "cname":["Android","Kotlin","RUBY"]},
+             {"catname":" Digital Marketing", "cname":["SME","SMO"]}
+         ]  
+        }
+    for(i in obj.couses){
+        x+= "<h3>"+obj.couses[i].catname+"</h3>";
+        for (j in obj.couses[i].cname){
+            x+= "<h4>"+obj.couses[i].cname[j]+ "</h4> <br\>";
+        }
+    }
+       document.getElementById("demo").innerHTML=x;
+    </script>
+</body>
+</html>

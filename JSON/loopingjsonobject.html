@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Accessinh json object keys & value using for in loop</p>
+    <div id="myid"></div>
+   <script>
+       var obj = {"name":"amar",
+        "place":"bhawanipatna",
+        "age":26,
+        "pin":766002}
+        for( var i in obj){
+            document.getElementById("myid").innerHTML += i +": "+obj[i]+"<br\>";
+        }
+   </script>
+</body>
+</html>

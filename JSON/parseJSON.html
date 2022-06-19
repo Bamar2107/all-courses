@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h3>Parsing JSON object into Javascript Objrct</h3>
+<div id="demo"></div>
+<script>
+    var data = `{
+                "name":"amar",
+                "place":"Bhpatna",
+                "mob":27722627,
+                "address":["Palace Road","kalahandi","odisha"]
+    }`;
+    var obj= JSON.parse(data);
+    var name = obj.name;
+    var place= obj.place;
+    var mob= obj.mob;
+    var landmark= obj.address[0];
+    var dist=obj.address[1];
+    var state=obj.address[2];
+    document.getElementById("demo").innerHTML= "Name :"+name+"<br/> Place: "+place+"<br/> mob: "+mob+"<br/> Landmark: "+landmark+"<br/> dist: "+
+    dist+"<br/> State: "+state;
+</script>    
+</body>
+</html>

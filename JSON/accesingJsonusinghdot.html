@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>accessing JSON object using DOT</h2>
+    <div id="demo">
+    </div>
+    <script>
+        var data ={"name":"amar",
+        "place":"bhawanipatna",
+        "pin":766002}
+        var name= data.name;
+        var city =data.place;
+        var pin = data.pin
+        document.getElementById("demo").innerHTML= "Name :"+name+"<br/>"+"city :"+city+"<br/>"+"Pin :"+pin;
+    </script>
+</body>
+</html>l

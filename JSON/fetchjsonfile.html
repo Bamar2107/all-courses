@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Fetch a JSON file with XMLHttpRequest</h3>
+    <p id="demo"></p>
+    <script>
+        var text="";
+      const xmlhttp = new XMLHttpRequest();
+      xmlhttp.onload = function(){
+          const obj = JSON.parse(this.responseText);
+          for (var i in obj){
+                text+= obj[i]+", ";
+          }
+        document.getElementById("demo").innerHTML=text;
+      }
+   xmlhttp.open("GET","jsondemo.txt");
+   xmlhttp.send();
+
+    </script>
+</body>
+</html>

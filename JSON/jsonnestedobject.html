@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Accessing nested JSON object using for/in loop</h2>
+    <div id="demo"></div>
+    <script>
+        var i, x="";
+       var obj = {"name":"amar",
+        "place":"bhawanipatna",
+        "age":26,
+        "address":{ "area":"placeroad",
+                    "city":"bhawanipatna",
+                    "pin":766000
+
+        }};
+        for(i in obj.address){
+            x+= obj.address[i]+"<br\>";
+        }
+      document.getElementById("demo").innerHTML= x;
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+JSON stands for java script object notation
+
+> json is text formated data file to strored the data or we can say serialization of structure data and store it as an object format.
+> This is drivewd from Object literal from javascript thats why the name is also JSON 
+> syntax in JSON is like creating an object in javascript.
+> JSON is easy to understand and human readable t5ext format file.
+> JSON is light weight as compaired to XML and it is used to send & recieved data from server.
+> For the light weight properties JSON can easily compatible with many languages. 
+
+Example
+
+
+{
+    "name":"amar,
+    "age":27,
+    "palce":"bjhawanipatna",
+    "country":"India",
+    "mobile":546535353
+
+}
+
+above Example is the simple JSON example to stored data as an object. 
+Every data pair with key value pair with double quotation & separated witha colon
