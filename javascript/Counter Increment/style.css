@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Sansita Swashed', cursive;
+    background-color: #2a364f;
+}
+h1{
+    text-align: center;
+    font-size: 40px;
+    font-weight:900 ;
+    color: white;
+}
+
+.counter-container{
+    width: 250px;
+    padding: 10px;
+    margin: 50px auto;
+    display: grid;
+    border: 3px solid white;
+    border-radius: 18px;
+    place-items: center;
+}
+.counter{
+    color:#daa540;
+    font-size: 52px;
+    font-weight: 900;
+    text-align: justify;
+    place-items: center;
+}
+#task, #coffee, #users{
+     color: white;
+     place-items: center;
+     
+}
+span{
+    font-size: 20px;
+    color: white;
+    text-align: justify;
+}

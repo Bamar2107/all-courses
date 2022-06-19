@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Propagation</title>
+    <style>
+        body{
+            background-color: aquamarine;
+        }
+        #parentdiv{
+            width: 300px;
+            height: 300px;
+            margin: 100px 100px;
+            border: 7px solid blue;
+            background-color: cornflowerblue;
+        }
+        #childdiv{
+            width: 100px;
+            height: 100px;
+            margin: 80px auto;
+            border: 6px solid green;
+            background-color: greenyellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>Event Propagation</h1>
+    <div id="parentdiv">
+        <div id="childdiv"></div>
+    </div>
+
+    <script>
+        const parentid= document.getElementById("parentdiv");
+        const childid= document.getElementById("childdiv");
+
+        const parentCall = () =>{
+            alert("Parent Div called");
+        }
+        
+        const childCall = () =>{
+            alert("Child Div called");
+           // event.stopPropagation();   to stop the bubbling (which is by default)
+        }
+
+
+         parentid.addEventListener("click",parentCall,true);
+         childid.addEventListener("click",childCall,true);  //3rd agrgument of addEventListner is bubbling & capturing by default it is false which is bubbling
+                                                             // true means capturing 
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+body{
+    background-color: coral;
+    text-align: center;
+}
+p{
+    font-family: 'Courier New', Courier, monospace;
+    font-size:xx-large;
+    color: rgb(69, 42, 170);
+}
+button{
+    font-size: 15px;
+    text-shadow: darkcyan;
+    color: black;
+    background-color: rgba(250, 193, 8, 0.973);
+    padding: 10px 10px;
+    border-radius: 7px;
+    border: 3px solid red;
+}

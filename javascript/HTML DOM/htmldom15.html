@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cloneNode()</title>
+</head>
+<body>
+    <h3>cloneNode() method</h3>
+    <ul id="mylist1">
+         <li>milk</li>
+         <li>coffee</li>
+         <li>tea</li>
+    </ul>
+    <button id="btn">Copy</button>
+
+    <ul id="mylist2">
+        <li>water</li>
+        <li>sugar</li>
+    </ul>
+
+    <script>
+        document.getElementById('btn').addEventListener('click', ()=>{
+        const node = document.getElementById('mylist1').lastChild;
+        const clone = node.cloneNode(true);
+        document.getElementById('mylist2').appendChild(clone);
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>client top & left</title>
+    <style>
+          #demo{
+              height: 130px;
+              width: 530px;
+              background-color: lightslategray;
+              margin: 30px 30px;
+              padding: 10px;
+              border-top: 10px solid green;
+              border-left: 10px solid red;
+          }
+    </style>
+</head>
+<body>
+    <div id="demo">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, voluptas?</p>
+    </div>
+    <div id="res"></div> <br>
+    <code>client top & left do not inculde margin or padding properties value. It only include border value.</code>
+    <script>
+        const element = document.getElementById('demo');
+        const clienttop = element.clientTop;
+        const clientleft = element.clientLeft;
+        document.getElementById('res').innerHTML = `Client Top : ${clienttop} px <br/> Client Left : ${clientleft}px`;
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>getAttribute & getAttributeNode</title>
+    <style>
+        code{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h3>getAttribute() & getAttributeNode()</h3>
+    <p id="demo" class="mypara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, iure.</p>
+    
+    <a id="mylink" href="www.google.com" target="_blank">Google</a>
+    <br><br>
+    <button onclick="getAttributeNodeName()">Get AttributeNode</button>
+    <p id="res1"></p>
+    <p id="res2"></p>
+    <p><code>getAttribute() retuns the value of an attribute while getAttributeNode() returns an attribute object and we must have to use attribute value property to get the value </code></p>
+    <script>
+        
+        const element = document.getElementById('demo');
+        const text = element.getAttribute('class')
+        document.getElementById('res1').innerText = `classname of the paragraph is: ${text}`; 
+
+
+        function getAttributeNodeName(){
+            const ele = document.getElementById('mylink');
+            const name = ele.getAttributeNode('target').value;
+            document.getElementById('res2').innerText = `Attribute target value for the link is ${name}`
+        }
+    </script>
+</body>
+</html>

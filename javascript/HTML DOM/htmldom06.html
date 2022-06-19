@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>focus & blur</title>
+    <style>
+        p{
+            color:blue;
+        }
+    </style>
+</head>
+<body>
+    <h3>Focus & Blur</h3>
+    <input type="text" placeholder="A text field" id="demo">
+    <button id="getFocus">Focus</button>
+    <button id="getBlur">Blur</button>
+    <p>Difference between focus and blur is, focus() enable select option for the perticular field, while blur() disabled the select option. </p>
+    <script>
+        
+       document.getElementById('getFocus').addEventListener('click', () =>{
+           document.getElementById('demo').focus();
+       })
+       document.getElementById('getBlur').addEventListener('click', () =>{
+        document.getElementById('demo').blur();
+       })
+    </script>
+
+</body>
+</html>

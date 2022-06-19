@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contains()</title>
+</head>
+<body>
+  <h3>contains() method</h3>  
+  <div id="demo">
+      <p id="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit, facilis! <span>Amar</span></p>
+  </div>
+  <div id="res"></div>
+  <script>
+      const element = document.getElementById('para')
+      const ans = document.getElementById('demo').contains(element);
+      document.getElementById('res').innerHTML = `Did the div element contains paragraph : ${ans}`;
+ </script>
+</body>
+</html>

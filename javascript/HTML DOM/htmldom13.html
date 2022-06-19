@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clientHeight & clientwidth</title>
+    <style>
+        #demo{
+            height: 300px;
+            width: 600px;
+            padding: 10px;
+            border: 5px solid red;
+            background-color: lightgreen;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <h2>clientHeight & clientHeight</h2>
+    <div id="demo">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio quam itaque eos! Modi nulla eius, corporis quidem corrupti iste reprehenderit sint, quas quis sit est illo id pariatur praesentium consectetur? Enim maiores velit asperiores saepe rerum optio nam. Deserunt vero voluptates mollitia cum temporibus consequuntur! Accusamus id nostrum aut, ex porro placeat quibusdam beatae earum! Unde debitis nulla illum accusamus? Aliquid, quasi est. Incidunt quis, recusandae optio tenetur tempore provident! Debitis minima, ea porro asperiores in officiis quisquam ullam veritatis dolor temporibus. Quis repellat quae odit inventore est maxime quos debitis veritatis ducimus! Quo ullam neque blanditiis, totam rerum dolorum!</p>
+    </div>
+    <div id="res"></div>
+    <br>
+    <p>difference between client height & offset height is, offset height counts the border width while client height don't.</p>
+    <script>
+        const element = document.getElementById('demo');
+        const cheight = element.clientHeight;
+        const cwidth = element.clientWidth;
+        const offsetheight = element.offsetHeight;
+        const offsetwidth = element.offsetWidth;
+        document.getElementById('res').innerHTML = `Div Information : <br/> Client Height: ${cheight} <br/> Client Width: ${cwidth} <br/> Offset Height : ${offsetheight} <br/> Offset Width : ${offsetwidth}`
+    </script>
+</body>
+</html>

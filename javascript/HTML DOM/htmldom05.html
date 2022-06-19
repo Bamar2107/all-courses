@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>appendChild()</title>
+</head>
+<body>
+      <h2>appendChild method</h2>
+      <ul id="mylist">
+          <li>Pink</li>
+          <li>Blue</li>
+          <li>Sky</li>
+      </ul>
+
+      <button id="btn">Add color</button>
+
+      <script>
+          document.getElementById('btn').addEventListener('click', addColor)
+          function addColor(){
+            
+          const node = document.createElement('li');
+          const nodetext = document.createTextNode('Orange');
+          node.appendChild(nodetext)
+          document.getElementById('mylist').appendChild(node)
+
+          }
+          
+      </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document  Object</title>
+</head>
+<body>
+    <h2>Document Object Example</h2>
+      <div id="demo"></div>
+      <script>
+          //get url
+          const url = document.URL;
+          //create new element
+          const paragraph = document.createElement('p');
+
+          paragraph.innerHTML = 'Hi This is a paragraph';
+          document.getElementById('demo').innerHTML = url
+          document.getElementById('demo').appendChild(paragraph)
+      </script>
+</body>
+</html>

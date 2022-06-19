@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>className</title>
+    <style>
+        .mystyle {
+            color: blue;
+            background-color: coral;
+        }
+        .newStyle{
+            background-color: darkblue;
+            color: white;
+            padding: 10px;
+            font-size: 25px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h2>The className property</h2>
+    <div id="demo" class="mystyle">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique commodi placeat veritatis perspiciatis saepe quibusdam.</p>
+    </div>
+    <button id="btn">Toggle</button>
+    <script>
+        document.getElementById('btn').addEventListener('click',() =>{
+            const element = document.getElementById('demo')
+             if(element.className == "mystyle" ){
+                 element.className ="newStyle"
+             }else{
+                 element.className="mystyle"
+             }
+
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>children</title>
+</head>
+<body>
+    <h3>Children property</h3>
+    <div id="demo">
+        <p>I am para 1</p>
+        <p>I am para 2</p>
+        <p>I am para 3</p>
+        <p>I am para 4</p>
+    </div>
+    <p>It will display which tags are used inside the body tag for the html page.</p>
+    <div id="res"></div>
+</body>
+<script>
+    let text=""
+    const collections = document.body.children;
+    for(let i=0; i<collections.length; i++){
+        text+= collections[i].tagName+" "+"<br/>"
+    }
+    document.getElementById('res').innerHTML = text
+</script>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contentEditable</title>
+</head>
+<body>
+    <h3>contentEditable property</h3>
+    <p id="demo">Hi i am paragraph, click on the editable button to edit me</p>
+    <button onclick="editable()">Edit</button>
+    <p id="res"></p>
+
+    <p id="para" contenteditable="true">Try to edit the text inside the paragraph</p>
+    <button onclick="myfunction(this)">Disable Edit</button>
+    <script>
+        function editable(){
+            document.getElementById('demo').contentEditable = true;
+            document.getElementById('res').innerHTML = `Now you can edit the paragraph.click inside the paragraph`
+        }
+
+        function myfunction(button){
+            const text = document.getElementById('para');
+            if(text.contentEditable == 'true')
+            {
+                text.contentEditable = 'false';
+                button.innerHTML = 'Enable Edit'
+            }else{
+                text.contentEditable = 'true';
+                button.innerHTML ='Disable Edit'
+            }
+        }
+    </script>
+</body>
+</html>

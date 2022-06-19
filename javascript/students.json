@@ -1,0 +1,14 @@
+[
+    {"name":"Amar",
+    "age": "26",
+    "city": "BPT"
+},
+{"name":"Rahul",
+    "age": "20",
+    "city": "MUM"
+},
+{"name":"Bikash",
+    "age": "32",
+    "city": "KPMG"}
+
+]

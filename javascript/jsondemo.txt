@@ -1,0 +1,8 @@
+{
+"name":"Amar",
+"age":26,
+"place":"Bhawanipatna",
+"pin":766001,
+"State":"Odisha"
+
+}

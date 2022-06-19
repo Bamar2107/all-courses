@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch Json</title>
+</head>
+<body>
+    <h1>Fetch JSON Data using Fetch() method</h1>
+    <script>
+        fetch("jsondemo.txt").
+        then((response) => response.json()).
+        then((data) => {
+            for(var x in data){
+                 document.write(data[x]+"<br/>");
+            }
+        }).
+        catch(error => document.write("Can't fetch Data"));
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>classList</title>
+    <style>
+        .mycolor{
+            color: blue;
+        }
+        .heaing{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h2 id="myhead">ClassList</h2>
+    
+    <div id="res">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, corporis atque vitae fuga minus accusantium.</p>
+    </div>
+    <script>
+        const addcolor=document.getElementById('res').classList;
+        const heading = document.getElementById('myhead').classList;
+        addcolor.add("mycolor")
+        heading.add("heaing")
+    </script>
+</body>
+</html>

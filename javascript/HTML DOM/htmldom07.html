@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>childElementCount</title>
+</head>
+<body>
+    <h2>Child Element Count</h2>
+    <div id="demo">
+        <p>i am first para</p>
+        <p>i am second para</p>
+        <p>i am three para</p>
+        <div id="demo1">
+            <p>i am first para of demo1</p>
+            <p>i am second para of demo1</p>
+            <div id="demo2">
+                <p>I am para 1 of demo2</p>
+            </div>
+        </div>
+    </div>
+    <button id="btn">Show child Element</button>
+    <p><b>childElementCount counts only those element which is inside of an element, it will not count nested children element, here 
+        demo 1 & demo 2 are the two different div, demo 1 falls under parent div 'demo' while demo 2 falls under demo 1 but result is 4.
+        because first 3 paragraph falls under demo div and after that demo1 is consider the only child of demo. That's why result is 4.
+    </b></p>
+    <div id="res"></div>
+    <script>
+        document.getElementById('btn').addEventListener('click', ()=>{
+            const num = document.getElementById('demo').childElementCount
+            document.getElementById('res').innerHTML = num;
+        })
+    </script>
+</body>
+</html>

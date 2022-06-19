@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dir property</title>
+</head>
+<body>
+    <h3>dir property</h3>
+    <p id="demo">click the change direction button to change the direction of the text.</p>
+    <button onclick="changeDir()">Change direction</button>
+    <p>default dir value is left to right(ltr). right to left(rtl) and auto are the other two values.</p>
+
+   <script>
+       function changeDir(){
+           document.getElementById('demo').dir = 'rtl';
+       }
+   </script>
+</body>
+</html>

@@ -1,0 +1,1 @@
+Hi i am the content from readme.txt file
