@@ -1,0 +1,2 @@
+export const BUY_ICECREAMS = 'BUY_ICECREAMS'
+export const ADD_ICECREAMS = 'ADD_ICECREAMS'
