@@ -1,0 +1,12 @@
+doctype html 
+html 
+    head 
+        title Component in PUG
+        style 
+            include ../style/css/custom.css
+        script 
+            include ../js/custom.js
+    body(onload="greetings()")
+        include ./header.pug 
+        h1(style="background-color:blue;border:2px solid black") Main content of the website 
+        include ./footer.pug 

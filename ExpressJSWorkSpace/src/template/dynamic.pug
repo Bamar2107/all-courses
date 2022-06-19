@@ -1,0 +1,27 @@
+doctype html 
+html 
+    head 
+        title Dynamic Web Page
+    body 
+        h1.mainheading(style="background-color:cyan;color:green") Hi Amarendra 
+        p.mainparagraph Dynamic web pages through pug
+        a(href="https://www.google.com", style="text-decoration:none") Google
+        p 
+        | Hi this is the 
+        | multiple line 
+        | paragraph
+        | using pug 
+        | using pipe symbol we can achieve this
+        //comment section in pug
+
+        //get the values from expressjs
+        //This is another way of declaring values
+        h2 Hello #{name}        
+        a(href='website', style='text-decoration:none') TechnicalBabu
+        ul 
+            li=skills[0]
+            li=skills[1]
+            li=skills[2]
+            li #{skills[3]} 
+            li=skills[4] 
+            li=skills[5]

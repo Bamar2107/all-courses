@@ -1,0 +1,11 @@
+doctype html 
+html 
+    head 
+        title if else in pug 
+    body 
+        if(data) 
+             h1 Hello: #{data.name}
+             h2 Profession: #{data.profession}
+             h3 City: #{data.city}
+        else 
+            h2(style="color:red") Data not found

@@ -1,0 +1,14 @@
+{
+  "name": "expressjsamar",
+  "version": "1.0.0",
+  "description": "ExpressJS Workspace",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Amarendra Babu",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.3"
+  }
+}
