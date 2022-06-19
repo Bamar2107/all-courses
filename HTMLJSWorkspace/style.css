@@ -1,0 +1,29 @@
+h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
+}
+.heading{
+    background-color:blanchedalmond;
+}
+.navigation{
+    background-color: darkslategrey;
+    color: floralwhite;
+}
+.H2mainheading{
+    color: brown;
+    text-align: center;
+}
+|a[href *= "google"]{
+    color: green;
+}/* this indicate all the links starts with google becomes green
+
+a [href ^= "https"]{
+    color: pink}  href statrs with https
+a [href $ ="com"]{
+    color: red;}  href ends with com
+
+
+
+
+
+*/

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>change color</title>
+</head>
+<style type="text/css">
+    h2{
+        color: blue;
+    }
+    div{
+        background-color: cadetblue;
+        width: 200px;
+        height: 200px;
+    }
+</style>
+<body>
+    <h2>change color with java script</h2><br>
+<div id="change">
+  
+</div>
+<button onclick="changeColor()">Change Color</button>
+<button onclick="back()">Back</button>
+<script type="text/javascript">
+function changeColor() {
+var div = document.getElementById("change");
+div.style.backgroundColor='green';
+};
+function back() {
+    var backcolor= document.getElementById("change");
+    backcolor.style.backgroundColor='cadetblue';
+};
+
+</script>
+
+</body>
+</html>

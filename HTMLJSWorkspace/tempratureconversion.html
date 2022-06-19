@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>Temprature Conversion
+        </title>
+    </head>
+    <body>
+        <p>Coveresion of Temprature from Farenhit to Celcius</p>
+        <p>
+            <label>Farenhit</label>: 
+            <input id="inputFraenhit" type="number" placeholder="farenhit" oninput="tempratureConverterCelcius(this.value)" onchange="tempratureConverter(this.value)"> 
+        </p>
+        <p> Celcius: <span id="outputCelcius"></span></p>
+
+
+        <label>Celcius</label>: 
+        <input id="inputCelcius" type="number" placeholder="Celcius" oninput="tempratureConverterFarenhit(this.value)" onchange="tempratureConverter(this.value)"> 
+    </p>
+    <p> Farenhit: <span id="outputFarenhit"></span></p>
+
+<script type="text/javascript">
+
+  function tempratureConverterCelcius(valNum){
+      valNum= parseFloat(valNum);
+      document.getElementById("outputCelcius").innerHTML=(valNum-32)/1.8;
+  }
+
+  function tempratureConverterFarenhit(valNum){
+      valNum= parseFloat(valNum);
+      document.getElementById("outputFarenhit").innerHTML=(valNum*1.8)+32;
+  }
+
+</script>
+
+    </body>
+</html>

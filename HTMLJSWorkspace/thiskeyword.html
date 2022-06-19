@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This keyword in js</title>
+</head>
+<body>
+    <p>In this example <b>this</b>
+     keyword is used and called the function <b>showDetails()</b> when show button is clicked</p>
+<button onclick="person.showDetails()">Show</button>
+
+<script type="text/javascript">
+    var person ={
+        name :"Amar",
+        age: 26,
+        showDetails: function()  {
+              alert(this.name+ "is"+ this.age+"years old");      
+        }
+    };
+</script>
+</body>
+</html>
