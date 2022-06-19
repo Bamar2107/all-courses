@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Replace With & Replace All</title>
+    <style>
+        .box{
+            border: 2px solid black;
+            width: 250px;
+            background: lightgreen;
+        }
+        .notes{background-color: yellow;max-width: fit-content;}
+    </style>
+</head>
+<body>
+    <h1>Replace With & Replace All in Jquery</h1>
+    <div class="box">
+        <h2>Heading</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto, labore!</p>
+        <br>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam, tempore nulla.</p>
+        <br>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia voluptate quaerat neque? Earum, cupiditate nisi?</p>
+        <br>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+    </div>
+    <br>
+    <button class="replace">Replace</button>
+    <p class="notes">There are major two difference between replaceWith & replaceAll.
+        In replaceWith() function first comes selector then come content but incase of replaceAll() function it is vice-versa.
+           Second difference is replaceWith() can actually replace the content with tags or some normal text. But in case of 
+           replaceAll() it is only replace according to tags. Means replace tag contents with tags name only.
+    </p>
+    <script src="/Jquery.js"></script>
+    <script src="/JS/replaceWith_replaceAll.js"></script>
+</body>
+</html>

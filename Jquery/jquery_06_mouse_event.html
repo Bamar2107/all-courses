@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Event</title>
+    <style>
+        #box{
+            border: 2px solid black;
+            background-color: lightcoral;
+            padding: 5px;
+            width: 400px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Jquery Mouse Event</h1>
+    <p>There are few event of mouse like click, dblclick, contextmenu, mouseenter, mouseleave</p>
+    <div id="box" class="test">
+        <h2>Test Box</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, maiores.</p>
+    </div>
+    <p>Click, double click & right click inside the div to change the background color of div</p>
+    <script src="Jquery.js"></script>
+    <script>
+          $(document).ready(function(){
+                 $('#box').click(function(){
+                     $('#box').css('background-color','lightgreen');
+                 });
+                 $('#box').dblclick(function(){
+                     $('#box').css('background-color','orange');
+                 });
+                 $('#box').contextmenu(function(){
+                     $('#box').css('background-color','lightblue');
+                 });
+                 $('#box').mouseenter(function(){
+                     $('#box').css('background-color','cyan');
+                 });
+                 $('#box').mouseleave(function(){
+                     $('#box').css('background-color','red');
+                 });
+          });
+    </script>
+</body>
+</html>

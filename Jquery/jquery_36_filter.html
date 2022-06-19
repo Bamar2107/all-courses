@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter</title>
+    <style>
+        .first , .second{
+            border: 2px solid black;
+            width: 300px;
+            padding: 5px;
+            height: 200px;
+        }
+        .first{
+            background: lightslategray;
+        }
+        
+        .second{
+            background: lightgreen;
+           
+        }
+    </style>
+</head>
+<body>
+    <h1>Filters Method</h1>
+    <div class="first">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim natus nulla ipsum eius consequatur incidunt!</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae, asperiores.</p>
+        <p><b>Click me to Slideway first paragarph of second div</b></p>
+    </div>
+    <button class="slice">slice</button>
+    <ul><li>Apple</li>
+    <li>Banana</li>
+    <li>Mango</li>
+    <li>Kiwi</li>
+    <li>Guava</li>
+    </ul>
+    <div class="second">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim natus nulla ipsum eius consequatur incidunt!</p>
+        <p class="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae, asperiores.</p>
+        <p><b>Click me to Slidwway first paragarph of First div</b></p>
+    </div>
+    <h2>Filtering methods</h2>
+    <ul>
+        <li>first() : target first element of the document or target first element of the specified element </li>
+        <li>last() :target last element of the document or target last element of the specified element</li>
+        <li>eq() : target perticular element, we can give negative sign inside the eq() method which represent last element</li>
+        <li>filter() : target perticular element, here we can set the id , class or tag namse of the element</li>
+        <li>not() : target all the remaining elements which are not set by any id or class name.</li>
+        <li>slice(1) : slice method slice others elements and apply perticular effects, here 1 means from starting point upto last  </li>
+        <li>slice(1,5): here starting from 1 index upto 4th position index element. 5th element is excluded here</li>
+    </ul>
+    
+  <script src="/Jquery.js"></script>
+  <script src="/JS/filters.js"></script>
+</body>
+</html>

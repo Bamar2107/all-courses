@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery Selectors</title>
+    <link rel="stylesheet" href="./CSS/selectors.css">
+</head>
+<body>
+    <h1>Selectors</h1>
+    <p>jquery target mainly 3 selectors i.e id,class & tag name </p>
+    <p>$('#id') $('.class') $('p')</p>
+    <p>advanced selectors like</p>
+    <p>$('*') for all, $('ul li'), $('.abc, .xyz') , $('h1,div,p')
+        $('p:first'), $('p:last'), $('li:even'), $('li:odd') etc
+    </p>
+
+    <div id="box" class="test">
+        <h2>Test Box</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, officiis!</p>
+    </div>
+    <ul id="list">
+        <li>Orange</li>
+        <li class="test">Banana</li>
+        <li>Mango</li>
+        <li class="test">Apple</li>
+        <li>Kiwi</li>
+    </ul>
+
+    <script src="Jquery.js"></script>
+    <script>
+        $(document).ready(function(){
+           // $('#list').css('color','red');
+           //$('*').css('boder','2px solid blue');
+            $('#list li').css('border','2px solid blue')
+            //$('.test').css('border','2px solid red');
+           // $("ul li:gt(2)").css('border','2ps solid green')
+        })
+    </script>
+</body>
+</html>

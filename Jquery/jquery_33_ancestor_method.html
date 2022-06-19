@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ancestor</title>
+    <style>
+        .mainouter, .outer, .inner, .inner>div{border: 2px solid black;}
+        .mainouter{
+            background: lightslategray;
+            width: 700px;
+            height: 500px;
+        }
+        
+        .outer{
+            background: lightgreen;
+            width: 600px;
+            margin: 20px;
+            height: 400px;
+        }
+        
+        .inner{
+            background: lightpink;
+            width: 500px;
+            height: 300px;
+            margin: 20px;
+            display: flex;
+            justify-content: center;
+        }
+        .inner div{
+            background: orange;
+            width:150px;
+            height: 100px;
+            align-self: center;
+            margin: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ancestor Method</h1>
+    <ul class="mainouter">Main-Outer
+        <div class="outer" style="position: absolute;">Outer
+            <div class="inner">Inner
+                <div>A</div>
+                <div>B</div>
+                <div class="child">C</div>
+                <div>D</div>
+            </div>
+        </div>
+    </ul>
+    <h2>Ancestor methods</h2>
+    <ul>
+        <li>parent() : target just parent element</li>
+        <li>parents() : target all parents inculding body</li>
+        <li>parents(".class or #id"): target perticular parent</li>
+        <li>parentsUntil(): target parent element or elements lies between</li>
+        <li>offsetParent() : target 1st parent element which property is position</li>
+        <li>closest(): target first parent according to selector</li>
+    </ul>
+  <script src="/Jquery.js"></script>
+  <script src="/JS/ancestor.js"></script>
+</body>
+</html>

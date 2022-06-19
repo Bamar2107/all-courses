@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siblings</title>
+    <style>
+        .mainouter, .outer, .inner, .inner>div{border: 2px solid black;}
+        .mainouter{
+            background: lightslategray;
+            width: 700px;
+            height: 500px;
+        }
+        
+        .outer{
+            background: lightgreen;
+            width: 600px;
+            margin: 20px;
+            height: 400px;
+        }
+        
+        .inner{
+            background: lightpink;
+            width: 500px;
+            height: 300px;
+            margin: 20px;
+            display: flex;
+            justify-content: center;
+        }
+        .inner div{
+            background: orange;
+            width:150px;
+            height: 100px;
+            align-self: center;
+            margin: 8px 5px;
+            text-align: center;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Siblings Method</h1>
+    <ul class="mainouter">Main-Outer
+        <div class="outer" style="position: absolute;">Outer:
+            <div class="inner"><h2>Inner</h2>
+                <div class="child1">A</div>
+                <div class="child2">B : Click me to show effects</div>
+                <div class="child3">C </div>
+                <div class="child4">D</div>
+                <div class="child5">E</div>
+            </div>
+        </div>
+    </ul>
+    <h2>Siblings methods</h2>
+    <ul>
+        <li>siblings() : target siblings elements </li>
+        <li>siblings('.classname or #idname') : target perticular sibling</li>
+        <li>next() :target next sibling</li>
+        <li>prev() : target previous sibling</li>
+        <li>nextAll() : target all siblings afterwards</li>
+        <li>nextUntil() : target next siblings which lies between source sibling & targated sibling</li>
+        <li>prevUntil() : target previous siblings which lies between source sibling & targated sibling </li>
+    </ul>
+  <script src="/Jquery.js"></script>
+  <script src="/JS/siblings.js"></script>
+</body>
+</html>

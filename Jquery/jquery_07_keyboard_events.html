@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KeyBoard Events</title>
+    <style>
+        #box{
+            border: 2px solid black;
+            background-color: lightcoral;
+            padding: 5px;
+            width: 400px;
+        }
+    </style>
+</head>
+<body>
+    <h1>KeyBoard events</h1>
+    <p>keypress, keydown & keyup are the events of keyboard</p>
+    <div id="box" class="test">
+        <h2>Test Box</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, maiores.</p>
+    </div>
+    <p>press any key and then release the key to see the effect on background color of body</p>
+    <script src="Jquery.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('body').keypress(function(){
+                //here this refers to the body tag because we are changing the same element
+                $(this).css('background-color','orange');
+            });
+            $('body').keyup(function(){
+                $(this).css('background-color','lightgreen');
+            });
+        })
+    </script>
+</body>
+</html>

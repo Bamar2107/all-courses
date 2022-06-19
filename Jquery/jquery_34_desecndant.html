@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descendant</title>
+    <style>
+        .mainouter, .outer, .inner, .inner>div{border: 2px solid black;}
+        .mainouter{
+            background: lightslategray;
+            width: 700px;
+            height: 500px;
+        }
+        
+        .outer{
+            background: lightgreen;
+            width: 600px;
+            margin: 20px;
+            height: 400px;
+        }
+        
+        .inner{
+            background: lightpink;
+            width: 500px;
+            height: 300px;
+            margin: 20px;
+            display: flex;
+            justify-content: center;
+        }
+        .inner div{
+            background: orange;
+            width:150px;
+            height: 100px;
+            align-self: center;
+            margin: 10px;
+            text-align: center;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Descendant Method</h1>
+    <ul class="mainouter">Main-Outer
+        <div class="outer" style="position: absolute;">Outer: Click me to show the effects
+            <div class="inner"><h2>Inner</h2>
+                <div>A</div>
+                <div class="child">B</div>
+                <div class="child">C</div>
+                <div>D</div>
+            </div>
+        </div>
+    </ul>
+    <h2>Descendant methods</h2>
+    <ul>
+        <li>children() : target just children element</li>
+        <li>find() : target perticular children element</li>
+    </ul>
+  <script src="/Jquery.js"></script>
+  <script src="/JS/descendant.js"></script>
+</body>
+</html>
