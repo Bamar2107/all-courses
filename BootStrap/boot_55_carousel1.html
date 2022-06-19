@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousel</title>
+    <link rel="stylesheet" href="/CSS/bootstrap-4.6.css">
+    <link rel="stylesheet" href="/CSS/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"></script>
+    <style>
+        .container{border: 0;}
+    </style>
+</head>
+<body class="bg-dark">
+      <div class="container-fluid mt-3">
+          <h4 class="display-4 text-info text-center">Carousel Class</h4>
+          <div class="row">
+              <div class="col">
+                  <!--carousel -->
+                    <div class="carousel slide carousel-fade" data-ride="carousel" id="mycarousel">
+
+                        <!--carousel indicators-->
+                        <ol class="carousel-indicators">
+                           <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
+                           <li data-target="#mycarousel" data-slide-to="1"></li>
+                           <li data-target="#mycarousel" data-slide-to="2"></li>
+                        </ol>
+
+                         <!--carousel inner-->
+                        <div class="carousel-inner">
+                            <!--carousel items-->
+                            <div class="carousel-item active" data-interval="3000">
+                                <img src="/images/coursesedit.jpg" class="d-block w-100" alt="">
+                                <div class="carousel-caption">
+                                    <h3>Web Developer</h3>
+                                </div>
+                            </div>
+                            <div class="carousel-item" data-interval="3000">
+                                <img src="/images/mobileedit.jpg" class="d-block w-100" alt="">
+                                <div class="carousel-caption">
+                                    <h3>Mobile Development</h3>
+                                </div>
+                            </div>
+                            <div class="carousel-item" data-interval="3000">
+                                <img src="/images/webedit.jpg" class="d-block w-100" alt="">
+                                <div class="carousel-caption">
+                                    <h3>Web Development</h3>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--carousel controls-->
+                        <a href="#mycarousel" class="carousel-control-prev" data-slide="prev"><span class="carousel-control-prev-icon"></span></a>
+                        <a href="#mycarousel" class="carousel-control-next" data-slide="next"><span class="carousel-control-next-icon"></span></a>
+                    </div>
+              </div>
+          </div>
+      </div>
+      <p class="text-white mt-3">if we want to set the slide stop when it reaches at the last indicators then we have to pass <code>wrap : false</code> options in 
+        jquery plugin. default value of wrap option is <code>true</code>.
+    </p>
+    <ul class="text-white"><h3>Carousel Methods</h3>
+         <li>prev : <code class="text-light">create a button and set an id on it. On script tag 
+             set click event on button. when user click on the button $('#mycarousel').carousel('prev') 
+         </code> </li>
+         <strong>same methods will be apply for remaining methods only methods name will be change</strong>
+         <li>next</li>
+         <li>pause : <code class="text-light">This method will pause the slideshow</code></li>
+         <li>cycle</li>
+         <li>number <code class="text-light">if we do not want to create carosel indicators then we can create our own by calling 
+             $('#mycarousel').carousel(0) (for 1st slide), $('#mycarousel').carousel(1) (for 2nd slide) etc.
+         </code></li>
+         <li>dispose</li>
+    </ul>
+     <ul class="text-white"><h3>Carousel Events</h3>
+        <li>slide.bs.carousel <code>trigger before next slide is changed</code></li>
+        <li>slid.bs.carousel <code>trigger after next slide is completely changed</code></li>
+    </ul>
+    <div class="container-fluid mt-3">
+        <div class="carousel slide carousel-fade" data-ride="carousel" id="caro">
+
+            <!--indicators-->
+            <ul class="carousel-indicators">
+                <li data-target="#caro" data-slide-to="0" class="active"></li>
+                <li data-target="#caro" data-slide-to="1"></li>
+                <li data-target="#caro" data-slide-to="2"></li>
+            </ul>
+
+            <!--slideshow-->
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-interval="3000">
+                    <img src="/images/coursesedit.jpg" alt="" class="d-block w-100">
+                    <div class="carousel-caption">
+                        <h3>Webdevelopment Course</h3>
+                    </div>
+                </div>
+                <div class="carousel-item" data-interval="3000">
+                    <img src="/images/mobileedit.jpg" alt="" class="d-block w-100">
+                    <div class="carousel-caption">
+                        <h3>Mobile development Course</h3>
+                    </div>
+                </div>
+                <div class="carousel-item" data-interval="3000">
+                    <img src="/images/webedit.jpg" alt="" class="d-block w-100">
+                    <div class="carousel-caption">
+                        <h3>Web application Course</h3>
+                    </div>
+                </div>
+
+            </div>
+            <!--Controls-->
+            <a href="#caro" class="carousel-control-prev" data-slide="prev"><span class="carousel-control-prev-icon"></span></a>
+            <a href="#caro" class="carousel-control-next" data-slide="next"><span class="carousel-control-next-icon"></span></a>
+        </div>
+    </div>
+</body>
+</html>

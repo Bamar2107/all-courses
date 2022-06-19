@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modals</title>
+    <link rel="stylesheet" href="/CSS/bootstrap-4.6.css">
+    <link rel="stylesheet" href="/CSS/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h4 class="display-4 text-info text-center">Modal class</h4>
+        <div class="row">
+            <div class="col">
+
+                <!--create buttonj to open modal-->
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#demo">Open</button>
+
+                <!--The Modal-->
+                <div class="modal fade" id="demo">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+
+                            <!--Modal header-->
+                            <div class="modal-header">
+                                <h4 class="modal-title text-primary">This is heading of Modal</h4>
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+
+                            <!--Modal Body-->
+                            <div class="modal-body">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+
+                            <!--Modal footer-->
+                            <div class="modal-footer">
+                                <h4 class="text-primary">This is modal footer</h4>
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!--Create button to show my Marks-->
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#marks">My Marks</button>
+
+                <!--Modal-->
+                <div class="modal fade" id="marks" data-backdrop="static">
+                    <div class="modal-dialog modal-lg modal-dialog-scrollable">
+                        <div class="modal-content">
+
+                            <!--Modal header-->
+                            <div class="modal-header">
+                                <h5 class="modal-title text-primary">Hi Amar this is your marks</h5>
+                            </div>
+
+                            <!--modal body-->
+                            <div class="modal-body">
+                                <ul class="list-group">
+                                   <strong class="text-info"> Subjects</strong>
+                                    <li class="list-group-item d-flex justify-content-between align-item-center">Math<span>78</span> </li>
+                                    <li class="list-group-item d-flex justify-content-between align-item-center">Physics<span>82</span></li>
+                                    <li class="list-group-item d-flex justify-content-between align-item-center">English<span>65</span></li>
+                                    <li class="list-group-item d-flex justify-content-between align-item-center">Chemistry
+                                    <a href="" data-toggle="tooltip" data-placement="right" title="43 = theory. 47 = practical">90</a>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-item-center">Computer
+                                    <a href="" data-toggle="tooltip" data-placement="right" title="40 = Theory, 47= Practical ">87</a>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-item-center">Hindi<span>78</span></li>
+                                    <hr>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita incidunt dolores inventore qui cupiditate doloremque aperiam quod, quam quisquam maiores sunt facere maxime? Illo eveniet dicta, nesciunt necessitatibus quo error obcaecati eligendi pariatur commodi officiis sed ad temporibus culpa totam fugit a delectus excepturi ab dolor! Quasi eos fugit, explicabo nemo corrupti ut aliquam. Error, possimus optio repellat corrupti magnam nesciunt facilis doloremque iure, libero quo natus aperiam sapiente reiciendis enim consectetur quod numquam a aspernatur eaque! Autem consequuntur velit blanditiis, minus facere quos aliquid, voluptate iusto eos, eligendi eveniet officiis unde deserunt! Illum voluptatem dignissimos temporibus doloremque aliquid cum magnam dolore consequatur quia, mollitia veniam rem ex facere ipsa eum expedita? Voluptas harum consectetur doloribus laudantium ratione provident voluptates repellendus incidunt nulla voluptatibus id libero ex necessitatibus, aperiam, nisi rem. Placeat magni ratione veritatis in fugit aspernatur iure ea sunt illum praesentium deserunt cum, harum eum natus nobis ex optio, earum expedita impedit at? Cum, ullam magni possimus temporibus ducimus itaque assumenda ipsa eaque harum. Deserunt natus asperiores quas suscipit doloribus vitae quo incidunt magni aliquid, impedit quisquam earum odio fugit ullam a ipsum aperiam iste commodi veritatis rerum voluptas qui. Cumque in provident quo, illo illum iste nisi quaerat eos accusamus reiciendis qui necessitatibus eaque eligendi adipisci ducimus modi ullam magni dignissimos sed a ex blanditiis officia ratione fugiat. Dolores incidunt minima maxime recusandae voluptatum soluta veniam perferendis ducimus dolorem. Voluptate illo sunt nesciunt a facilis doloremque explicabo sapiente quo in adipisci laudantium, ad sit recusandae. Quaerat id dicta vero nisi vel, sunt repellat! Temporibus nihil voluptates eum nesciunt, exercitationem dolorum necessitatibus similique qui ex, adipisci, animi quia. Ratione accusantium commodi libero quis placeat? In accusantium, debitis inventore laboriosam officia dignissimos architecto soluta, nisi veniam quibusdam ipsam incidunt sint? Cumque quos veniam voluptates aspernatur vitae a ex perspiciatis.</p>
+                                
+                                </ul>
+                            </div>
+
+                            <!--Modal footer-->
+                            <div class="modal-footer">
+                                <h5><span class="badge badge-primary">Total Marks = 480</span></h5>
+                                <span data-toggle="tooltip" class="text-info" title="First Class">Grade</span>
+                            </div>
+                            <button class="btn btn-danger" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn btn-success" id="showBtn">Click here to show your marks</button>
+            </div>
+        </div>
+    </div>
+    <h2>Modals Methods</h2>
+    <ul>
+        <li>show</li>
+        <li>hide</li>
+        <li>toggle</li>
+        <li>dispose</li>
+        <li>handleUpdate</li>
+    </ul>
+    <h2>Modals Events</h2>
+    <ul>
+        <li>show.bs.modal</li>
+        <li>shown.bs.modal</li>
+        <li>hide.bs.modal</li>
+        <li>hidden.bs.modal</li>
+        <li>hidePrevented.bs.modal</li>
+    </ul>
+    <script>
+        $(document).ready(function(){
+            $('[data-toggle="tooltip"]').tooltip();
+             
+            $('#showBtn').click(function(){
+                $('#marks').modal('show');
+            });
+
+            $('#marks').on('show.bs.modal', function(){
+                alert('Hi Amar Your Marks has published')
+            });
+
+            $('#marks').on('shown.bs.modal', function(){
+                alert('Congratulations Amar')
+            });
+            $('#marks').on('hide.bs.modal', function(){
+                alert('You can take a print of your result now')
+            });
+            $('#marks').on('hidden.bs.modal', function(){
+                alert('Wish you all the best for your future')
+            });
+            $('#marks').on('hidePrevented.bs.modal', function(){
+                alert('Click on the close button to go back to your result')
+            });
+
+        });
+    </script>
+</body>
+</html>

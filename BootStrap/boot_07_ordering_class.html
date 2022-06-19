@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReOrdering class</title>
+    <link rel="stylesheet" href="/CSS/bootstrap.css">
+    <style>
+        .container{
+            border: 2px solid black;
+        }
+        .orange{
+            background-color: orange;
+        }
+        .pink{
+            background-color: pink;
+        }
+        .green{
+            background-color: green;
+        }
+        .aqua{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <h1>Reordering class in BootStrap</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col order-md-last orange">col 1 </div>
+            <div class="col pink">col 2</div>
+            <div class="col order-md-first green">col 3</div>
+            <div class="col aqua">col 4</div>
+        </div>
+    </div>
+    <br>
+    <h2>Example of order-first & order-last</h2>
+    <hr>
+    <div class="container">
+        <div class="row">
+            <div class="col order-md-3 order-sm-2 orange">col 1 </div>
+            <div class="col order-md-4 order-sm-3 pink">col 2</div>
+            <div class="col order-md-2 order-sm-1 green">col 3</div>
+            <div class="col order-md-1 order-sm-2 aqua">col 4</div>
+        </div>
+    </div>
+    <br>
+    <h2>example of order-index number</h2>
+    
+    <p>order class is the predefined class in bootstrap to rearrange the element according to their position. 
+        order-first & order-last is the only two position class of order-class.
+    </p>
+    <p>if we specify any screen size in order class then it will work until that class only. Once it reached smaller screen 
+        elements will go back to their original position.
+    </p>
+    <p>we can set random position for the elements apart from just first & last position. For that we have different class in bootstrap
+        i.e, order-0 to order-12 class which place the specific element to the thier given order number. 
+    </p>
+</body>
+</html>

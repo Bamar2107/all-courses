@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Col Class</title>
+    <link rel="stylesheet" href="/CSS/bootstrap.css">
+    <style>
+        .container{
+            border: 3px solid black;
+        }
+        .row{
+            border: 3px solid green;
+        }
+        .col{
+            border: 3px solid blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Col Class in Bootstrap</h1>
+    <div class="container">Container
+        <div class="row row-cols-2">
+            <div class="col">ColA</div>
+            <div class="col">ColB</div>
+            <div class="col">ColC</div>
+            <div class="col">ColD</div>
+            <div class="col">ColE</div>
+            <div class="col">ColF</div>
+            <div class="col">ColG</div>
+            <div class="col">ColH</div>
+        </div>
+    </div>
+    <p>w-100 is the predefined class which breaks the columns line into the new line or you can say into next line</p>
+    <p>row-cols-2 is the predifined class which makes the columns separate according to the number of columns given. we can give any number
+        of columns to seprate.
+    </p>
+    <p>difference between w-100 & row-cols is, w-100 is manually break the columns & in row-cols we can set the number of columns to be separate</p>
+   <p>There are different media screen were written for different screen size in the bootstrap. The screen sizes are</p>
+   <p>extra large (col-xl), large(col-mg), medium(col-md), small(col-sm) & extra small</p>
+   <p>in the above paragraph if perticular col group is sprcified, then width of the smaller screen size col group will became max-width = 100% </p>
+   <p>Otherwise width is width=100% for same & above screen size col group.</p>
+</body>
+</html>

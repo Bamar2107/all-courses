@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid system Col Class</title>
+    <link rel="stylesheet" href="/CSS/bootstrap.css">
+    <style>
+    .container{
+        border: 0px solid black;
+        min-height: auto;
+    }
+    #header{margin: 0px;}
+    .col-12{background-color: rgb(250, 183, 59);}
+    #menu ul li{
+        list-style-type: none;
+        display: inline-block;
+        padding: 5px;    
+        margin: 0px;     
+    }
+    #sidebar ul li{
+        list-style-type: none;
+    }
+    li a{text-decoration: none;}
+    .col-8{background-color: lightgreen;}
+    .col-4{background-color: rgb(154, 255, 255);}
+
+ .col-1,.col-2,.col-3,.col-4,.col-5,.col-6,.col-7,.col-8,.col-9,.col-10,
+ .col-11,.col-12{border: 0px solid black}
+</style>
+</head>
+<body>
+    <h2>Grid system Col Class in boot strap</h2>
+    <p>There are 12 grid can be placed inside a row class, means inside a row we can place 12 small grid which acts as a small container</p>
+    <p>total number of grid must be equal to 12.</p>
+    <p>suppose i want to create a content area & a side bar then i will create .col-8 & .col-4 which is ewqual to 12 number of grid 
+        divided into two section. First one is 8 numberes of columns for context area & 4 numbers of columns for sidebar.
+    </p>
+   <div class="container">
+       <div class="row" >
+           <div class="col-12" id="header">
+               <h1>Technical Babu</h1>
+           </div>
+       </div>
+
+       <div class="row">
+        <div class="col-12" id="menu">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Gallery</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Links</a></li>
+            </ul>
+        </div>
+    </div>
+ 
+       <div class="row">
+           <div class="col-md-8">
+               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia ducimus eligendi distinctio. Sit beatae vero sequi repellat doloribus possimus quaerat officia laborum veniam ipsa reprehenderit tempore a saepe et, aspernatur, aperiam voluptatem illo. At molestiae assumenda, laborum amet fuga illo, saepe omnis non sint reprehenderit numquam quidem aliquid sunt officia incidunt. Mollitia inventore ratione fugiat tenetur voluptas eveniet pariatur unde aut eligendi nihil! Laborum est adipisci eius laudantium consequuntur nisi perferendis, libero iure alias veniam nostrum cum saepe beatae iste nulla assumenda odit sunt quae ea aut aliquam possimus deleniti accusamus? Distinctio neque ab quae ipsam illum veritatis hic corporis earum corrupti facilis, dignissimos impedit molestias ad tempore facere aut nesciunt necessitatibus. Aliquam, at? Velit corporis numquam hic asperiores vitae voluptas omnis ipsam mollitia iusto?</p>
+           </div>
+           <div class="col-md-4" id="sidebar">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Gallery</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Links</a></li>
+            </ul>
+           </div>
+       </div>
+   
+       <div class="row">
+           <div class="col-12">@copyrights @2022</div>
+       </div>
+
+   </div>
+</body>
+</html>

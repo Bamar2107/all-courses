@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tooltip</title>
+    <link rel="stylesheet" href="/CSS/bootstrap-4.6.css">
+    <link rel="stylesheet" href="/CSS/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"></script>
+</head>
+<body>
+     <div class="container">
+         <h4 class="display-4 text-info text-center">Tooltip</h4>
+         <a href="" data-toggle="tooltip" title="Hi i am tooltip, Hope you are doing good" id="tool">Hover Me</a>
+         <button class="btn btn-primary" id="show">Show</button>
+         <button class="btn btn-danger" id="hide">Hide</button>
+         <button class="btn btn-info" id="toggle">Toggle</button>
+         <button class="btn btn-warning" id="dispose">Dispose</button>
+         <p><strong>there are many properties of tooltip() method like animation (default value is true), delay :{"show":1000, "hide" :1000}, trigger
+            offset etc.</strong>
+         </p>
+         <p><strong>Once user click on the dispose button then tooltip message will be deleted and hover will not work. To restore the message again either
+             refresh the page or click on toggle or show button.
+         </strong></p>
+         <p><strong>enable & disable are the other two methods. difference between disabled and dispose is disabled just hide the content while
+             dispose completely delete the tooltip content </strong></p>
+             <p><strong>toggleEnabled is the another method which is the combination of enable & disable</strong></p>
+     </div>
+     <script>
+         $(document).ready(function(){
+             $('#tool').tooltip({
+                 placement:"top",
+                 html : true,  
+             });
+
+             $('#show').click(function(){
+                 $('#tool').tooltip('show');
+             });
+
+             $('#hide').click(function(){
+                 $('#tool').tooltip('hide');
+             });
+
+             $('#toggle').click(function(){
+                 $('#tool').tooltip('toggle');
+             });
+
+             $('#dispose').click(function(){
+                 $('#tool').tooltip('dispose');
+             });
+             });
+     </script>
+</body>
+</html>

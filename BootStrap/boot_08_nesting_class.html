@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nesting</title>
+    <link rel="stylesheet" href="/CSS/bootstrap.css">
+    <style>
+        .container{
+            border: 2px solid black;
+        }
+        .pink{
+            background-color: pink;
+        }
+        h2{
+            text-align: center;
+        }
+        .subheading{
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+  <h1>Nesting class in BootStrap</h1>  
+  <div class="container">
+      <div class="row">
+          <div class="col-md-6 pink">
+                 <div class="row">
+                     <h2>main Heading</h2>
+                     <div class="col-md-6 subheading">
+                        <h2>Sub Heading</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime rem sed ducimus dolorum minus modi doloremque praesentium voluptatum dolores, consequatur, laboriosam vitae quisquam excepturi, autem magnam labore voluptatibus. Reprehenderit, dolorum!</p>
+                     </div>
+                     <div class="col-md-6 subheading">
+                         <h2>Another Sub heading</h2>
+                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum quos alias unde rerum exercitationem error ullam inventore esse tenetur ut!</p>
+                     </div>
+                 </div>
+          </div>
+      </div>
+  </div>
+</body>
+</html>

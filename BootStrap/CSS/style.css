@@ -1,0 +1,47 @@
+.container{
+    border: 5px solid black;
+}
+.pink{
+    background: pink;   
+}
+.orange{
+    background: orange;   
+}
+.lightblue{
+    background: lightblue;   
+}
+.lightgreen{
+    background: lightgreen;   
+}
+.nav{
+    background-color: darkcyan;
+}
+.nav-link{
+    color: #fff;
+}
+.nav-link:hover,
+.nav-link.active{
+    background-color: sandybrown;
+    color: #fff;
+}
+.nav i{
+    padding:12px;
+}
+.nav a{
+    padding: 12px;
+}
+.fa-brands{
+    color: #fff;
+    font-size: 36px;
+    padding-right: 40px;
+}
+.fa-search{
+    color: #fff;
+    font-size: 36px;
+}
+#search{
+    padding-right: 8px;
+}
+#search1{
+    font-size: 18px;
+}

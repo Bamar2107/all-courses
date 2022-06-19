@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inputt group</title>
+    <link rel="stylesheet" href="/CSS/bootstrap-4.6.css">
+    <link rel="stylesheet" href="/CSS/style.css">
+</head>
+<body>
+    <div class="container">
+        <h3 class="display-4 text-info text-center">Input group Class</h3>
+        <div class="row py-3">
+            <div class="col-3">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">$</span>
+                    </div>
+                    <input type="text" class="form-control"  placeholder="prepend class">
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="input-group">
+                    <input type="text" class="form-control"  placeholder="append class">
+                    <div class="input-group-append">
+                        <span class="input-group-text">@gmail</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="input-group input-group-lg">
+                    <input type="text" class="form-control"  placeholder="append class large">
+                    <div class="input-group-append">
+                        <span class="input-group-text">%</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="input-group input-group-sm">
+                    <input type="text" class="form-control" placeholder="append class small">
+                    <div class="input-group-append">
+                        <span class="input-group-text">₹</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">₹</span>
+                    </div>
+                    <input type="number" class="form-control">
+                    <div class="input-group-append">
+                        <span class="input-group-text">0.00</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Mr.</span>
+                    </div>
+                    <input type="text" placeholder="First Name">
+                    <input type="text" placeholder="Last Name">
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="input-group">
+                    <input type="password" placeholder="password" >
+                    <div class="input-group-append">
+                        <button class="btn btn-primary">LogIn</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <p>For creating clickable button with dropdown list we need three files which we have to link to our project i.e, jquery file, proper file (3rd party file) & bootstrap js file</p>
+    <p>after linking all these above files we need to create a button with class name dropdown-toggle & data-toggle=dropdown.</p>
+    <p>After that we need to create a class called dropdown-menu</p>
+    <p>Inside that class we can create any numbers of anchor tag or other tag as per our recruitment & pass class name as dropdown-item</p>
+    <p>And if we want to create split button then before createing a button we need to create another normal button, and inside 
+        dropdown-toggle class we need to pass another classname i.e, dropdown-toggle-split</p>
+</body>
+</html>
